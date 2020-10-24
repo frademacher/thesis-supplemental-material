@@ -1,0 +1,66 @@
+import datatypes from "ChargingStationManagement.data" as Domain
+import technology from "Cqrs.technology" as CQRS
+import technology from "DomainEvents.technology" as DomainEvents
+import technology from "Java.technology" as Java
+import technology from "Kafka.technology" as Kafka
+import technology from "Spring.technology" as Spring
+
+@technology(CQRS)
+@technology(DomainEvents)
+@technology(Java)
+@technology(Kafka)
+@technology(Spring)
+@endpoints(Kafka::_protocols.kafka: "localhost:9092";)
+@CQRS::_aspects.CommandSide("ChargingStationManagement")
+@Kafka::_aspects.BootstrapAddress("localhost:9092")
+@Kafka::_aspects.AvroRegistryAddress("localhost:8081")
+@Spring::_aspects.Application(name="ChargingStationManagementCommandSide")
+public functional microservice de.puls.ChargingStationManagementCommandSide {
+	@endpoints(Spring::_protocols.rest: "/resources/v1";)
+	interface CommandSide {
+		---
+		API endpoint for creating a parking area
+		@required command Command object to specify the values of the new parking area
+		---
+		@endpoints(Spring::_protocols.rest: "/parkingarea";)
+		@Spring::_aspects.Put
+		createParkingArea(
+			@Spring::_aspects.RequestBody
+			@Spring::_aspects.Valid
+			sync command : Domain::ChargingStationManagement.CreateParkingAreaCommand
+		);
+
+		---
+		API endpoint for updating a parking area
+		@required id Identifier of the parking area to be updated
+		@required command Command object to specify the values of the updated parking area
+		---
+		@endpoints(Spring::_protocols.rest: "/parkingarea/{id}";)
+		@Spring::_aspects.Post
+		updateParkingArea(
+			@Spring::_aspects.PathVariable
+            sync id : long,
+
+			@Spring::_aspects.RequestBody
+			@Spring::_aspects.Valid
+			sync command : Domain::ChargingStationManagement.UpdateParkingAreaCommand
+		);
+
+		---
+		API endpoint for deleting a parking area
+		@required id Identifier of the parking area to be deleted
+		---
+		@endpoints(Spring::_protocols.rest: "/parkingarea/{id}";)
+		@Spring::_aspects.Delete
+		deleteParkingArea(
+			@Spring::_aspects.PathVariable
+            sync id : long
+		);
+
+		@DomainEvents::_aspects.Producer("ParkingAreaProducerService")
+		@Kafka::_aspects.AvroParticipant(topic="parkingAreaEvents")
+		sendParkingAreaCreatedEvent(
+			async out event : Domain::ChargingStationManagement.ParkingAreaCreatedEvent
+		);
+	}
+}

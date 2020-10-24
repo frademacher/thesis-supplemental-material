@@ -1,0 +1,16 @@
+technology DomainEvents {
+	service aspects {
+		aspect EventGroup<singleval> for types {
+			string name<mandatory>;
+		}
+
+		aspect Producer<singleval> for operations {
+			string handlerName<mandatory>;
+		}
+		aspect Consumer<singleval> for operations {
+			string handlerName<mandatory>;
+			boolean groupEventsOnly = false;
+			boolean disableErrorHandling = false;
+		}
+	}
+}

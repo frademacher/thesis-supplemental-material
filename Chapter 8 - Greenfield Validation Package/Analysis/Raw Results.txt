@@ -1,0 +1,463 @@
+----------------------------------------------------------------------------------------------------
+Pattern comparison for microservice ChargingStationManagementCommandSide (base Genlet: 5ddd)
+----------------------------------------------------------------------------------------------------
+Java
+	plain
+		nFiles: 19
+		LOC: 574
+	extended generation gap
+		nFiles: 37
+		LOC: 820
+	generation gap
+		nFiles: 55
+		LOC: 987
+Maven
+	plain
+		nFiles: 1
+		LOC: 79
+	extended generation gap
+		nFiles: 1
+		LOC: 79
+	generation gap
+		nFiles: 1
+		LOC: 79
+Properties
+	plain
+		nFiles: 1
+		LOC: 6
+	extended generation gap
+		nFiles: 1
+		LOC: 6
+	generation gap
+		nFiles: 1
+		LOC: 6
+Avro
+	plain
+		nFiles: 3
+		LOC: 324
+	extended generation gap
+		nFiles: 3
+		LOC: 324
+	generation gap
+		nFiles: 3
+		LOC: 324
+
+
+
+----------------------------------------------------------------------------------------------------
+Pattern comparison for microservice ChargingStationManagementQuerySide (base Genlet: 5ddd)
+----------------------------------------------------------------------------------------------------
+Java
+	plain
+		nFiles: 22
+		LOC: 680
+	extended generation gap
+		nFiles: 43
+		LOC: 952
+	generation gap
+		nFiles: 64
+		LOC: 1139
+Maven
+	plain
+		nFiles: 1
+		LOC: 79
+	extended generation gap
+		nFiles: 1
+		LOC: 79
+	generation gap
+		nFiles: 1
+		LOC: 79
+Properties
+	plain
+		nFiles: 1
+		LOC: 8
+	extended generation gap
+		nFiles: 1
+		LOC: 8
+	generation gap
+		nFiles: 1
+		LOC: 8
+Avro
+	plain
+		nFiles: 3
+		LOC: 324
+	extended generation gap
+		nFiles: 3
+		LOC: 324
+	generation gap
+		nFiles: 3
+		LOC: 324
+
+
+
+
+                                                                                                                                                                                                        
+
+----------------------------------------------------------------------------------------------------
+Comparison of domain- and service-related code for microservice ChargingStationManagementCommandSide (base Genlet: 5ddd, base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Java
+	Complete
+		nFiles: 19
+		LOC: 574
+	Domain
+		nFiles: 15
+		LOC: 439
+	Service
+		nFiles: 4
+		LOC: 135
+Avro
+	Complete
+		nFiles: 3
+		LOC: 324
+	Domain
+		nFiles: 3
+		LOC: 324
+	Service
+		nFiles: 0
+		LOC: 0
+Maven
+	Complete
+		nFiles: 1
+		LOC: 79
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 79
+Properties
+	Complete
+		nFiles: 1
+		LOC: 6
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 6
+Over all languages
+	Complete
+		nFiles: 24
+		LOC: 983
+	Domain
+		nFiles: 18
+		LOC: 763
+	Service
+		nFiles: 6
+		LOC: 220
+
+----------------------------------------------------------------------------------------------------
+Comparison of domain- and service-related code for microservice ChargingStationManagementQuerySide (base Genlet: 5ddd, base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Java
+	Complete
+		nFiles: 22
+		LOC: 680
+	Domain
+		nFiles: 16
+		LOC: 465
+	Service
+		nFiles: 6
+		LOC: 215
+Avro
+	Complete
+		nFiles: 3
+		LOC: 324
+	Domain
+		nFiles: 3
+		LOC: 324
+	Service
+		nFiles: 0
+		LOC: 0
+Maven
+	Complete
+		nFiles: 1
+		LOC: 79
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 79
+Properties
+	Complete
+		nFiles: 1
+		LOC: 8
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 8
+Over all languages
+	Complete
+		nFiles: 27
+		LOC: 1091
+	Domain
+		nFiles: 19
+		LOC: 789
+	Service
+		nFiles: 8
+		LOC: 302
+
+
+                                                                                                                                                                                                        
+
+----------------------------------------------------------------------------------------------------
+Genlet comparison for microservice ChargingStationManagementCommandSide (base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Java
+	none
+		nFiles: 20
+		LOC: 488
+	springcloud
+		nFiles: 20
+		LOC: 520
+	domain events
+		nFiles: 20
+		LOC: 520
+	springcloud kafka
+		nFiles: 19
+		LOC: 554
+	ddd
+		nFiles: 19
+		LOC: 574
+
+
+
+
+Maven
+	none
+		nFiles: 1
+		LOC: 31
+	springcloud
+		nFiles: 1
+		LOC: 54
+	domain events
+		nFiles: 1
+		LOC: 54
+	springcloud kafka
+		nFiles: 1
+		LOC: 74
+	ddd
+		nFiles: 1
+		LOC: 79
+
+
+
+
+Properties
+	springcloud
+		nFiles: 1
+		LOC: 1
+	domain events
+		nFiles: 1
+		LOC: 1
+	springcloud kafka
+		nFiles: 1
+		LOC: 6
+	ddd
+		nFiles: 1
+		LOC: 6
+
+
+
+
+Avro
+	none
+		nFiles: 3
+		LOC: 324
+	springcloud
+		nFiles: 3
+		LOC: 324
+	domain events
+		nFiles: 3
+		LOC: 324
+	springcloud kafka
+		nFiles: 3
+		LOC: 324
+	ddd
+		nFiles: 3
+		LOC: 324
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+Genlet comparison for microservice ChargingStationManagementQuerySide (base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Java
+	none
+		nFiles: 19
+		LOC: 499
+	springcloud
+		nFiles: 19
+		LOC: 534
+	domain events
+		nFiles: 19
+		LOC: 534
+	springcloud kafka
+		nFiles: 22
+		LOC: 660
+	ddd
+		nFiles: 22
+		LOC: 680
+
+
+
+
+Maven
+	none
+		nFiles: 1
+		LOC: 31
+	springcloud
+		nFiles: 1
+		LOC: 54
+	domain events
+		nFiles: 1
+		LOC: 54
+	springcloud kafka
+		nFiles: 1
+		LOC: 74
+	ddd
+		nFiles: 1
+		LOC: 79
+
+
+
+
+Properties
+	springcloud
+		nFiles: 1
+		LOC: 2
+	domain events
+		nFiles: 1
+		LOC: 2
+	springcloud kafka
+		nFiles: 1
+		LOC: 8
+	ddd
+		nFiles: 1
+		LOC: 8
+
+
+
+
+Avro
+	none
+		nFiles: 3
+		LOC: 324
+	springcloud
+		nFiles: 3
+		LOC: 324
+	domain events
+		nFiles: 3
+		LOC: 324
+	springcloud kafka
+		nFiles: 3
+		LOC: 324
+	ddd
+		nFiles: 3
+		LOC: 324
+
+
+
+
+
+
+                                                                                                                                                                                                        
+
+----------------------------------------------------------------------------------------------------
+Ratio comparison for microservice ChargingStationManagementCommandSide (base Genlet: 5ddd, base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Complete
+	Manual
+		LEMMA
+			nFiles: 3
+			LOC: 156
+		SUMS
+			nFiles: 3
+			nLOC: 156
+	Generated
+		Java
+			nFiles: 19
+			LOC: 574
+		Maven
+			nFiles: 1
+			LOC: 79
+		Properties
+			nFiles: 1
+			LOC: 6
+		Avro
+			nFiles: 3
+			LOC: 324
+		SUMS
+			nFiles: 24
+			nLOC: 983
+Domain
+	Manual
+		LEMMA_domain
+			nFiles: 2
+			LOC: 95
+		SUMS
+			nFiles: 2
+			nLOC: 95
+	Generated
+		Java
+			nFiles: 15
+			LOC: 439
+		Avro
+			nFiles: 3
+			LOC: 324
+		SUMS
+			nFiles: 18
+			nLOC: 763
+
+----------------------------------------------------------------------------------------------------
+Ratio comparison for microservice ChargingStationManagementQuerySide (base Genlet: 5ddd, base pattern: 3plain)
+----------------------------------------------------------------------------------------------------
+Complete
+	Manual
+		LEMMA
+			nFiles: 3
+			LOC: 186
+		SUMS
+			nFiles: 3
+			nLOC: 186
+	Generated
+		Java
+			nFiles: 22
+			LOC: 680
+		Maven
+			nFiles: 1
+			LOC: 79
+		Properties
+			nFiles: 1
+			LOC: 8
+		Avro
+			nFiles: 3
+			LOC: 324
+		SUMS
+			nFiles: 27
+			nLOC: 1091
+Domain
+	Manual
+		LEMMA_domain
+			nFiles: 2
+			LOC: 107
+		SUMS
+			nFiles: 2
+			nLOC: 107
+	Generated
+		Java
+			nFiles: 16
+			LOC: 465
+		Avro
+			nFiles: 3
+			LOC: 324
+		SUMS
+			nFiles: 19
+			nLOC: 789
+

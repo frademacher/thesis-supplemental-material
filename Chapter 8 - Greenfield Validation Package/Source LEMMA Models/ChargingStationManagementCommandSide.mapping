@@ -1,0 +1,22 @@
+import microservices from "ChargingStationManagementCommandSide.services" as CommandSideServices
+import technology from "Java.technology" as Java
+import technology from "Kafka.technology" as Kafka
+import technology from "Spring.technology" as Spring
+
+@technology(Kafka)
+type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaCreatedEvent {
+	aspects {
+		Kafka::_aspects.AvroSchema(
+			file="ParkingAreaCreatedEvent.avsc"
+		);
+	}
+}
+
+@technology(Kafka)
+type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaUpdatedEvent {
+	aspects {
+		Kafka::_aspects.AvroSchema(
+			file="ParkingAreaUpdatedEvent.avsc"
+		);
+	}
+}

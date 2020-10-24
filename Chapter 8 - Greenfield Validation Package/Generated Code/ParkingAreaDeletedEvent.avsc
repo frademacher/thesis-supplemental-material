@@ -1,0 +1,12 @@
+{
+  "type" : "record",
+  "name" : "ParkingAreaDeletedEvent",
+  "namespace" : "ChargingStationManagement",
+  "doc" : "",
+  "fields" : [ {
+    "name" : "parkingAreaId",
+    "type" : "long",
+    "doc" : ""
+  } ],
+  "lemmaName" : "ChargingStationManagement.ParkingAreaDeletedEvent"
+}

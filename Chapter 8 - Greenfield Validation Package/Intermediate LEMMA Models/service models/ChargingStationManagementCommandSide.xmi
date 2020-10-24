@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ASCII"?>
+<intermediate:IntermediateServiceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intermediate="http://www.fhdo.de/lemma/service/intermediate" xmlns:intermediate_1="http://www.fhdo.de/lemma/data/intermediate" sourceModelUri="../../Source LEMMA Models/ChargingStationManagementCommandSide.services">
+  <imports name="Domain" importUri="../data models/ChargingStationManagement.xmi" importTypeName="DATATYPES"/>
+  <imports name="CQRS" importUri="../../Source LEMMA Models/Cqrs.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="DomainEvents" importUri="../../Source LEMMA Models/DomainEvents.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="Java" importUri="../../Source LEMMA Models/Java.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="Kafka" importUri="../../Source LEMMA Models/Kafka.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="Spring" importUri="../../Source LEMMA Models/Spring.technology" importTypeName="TECHNOLOGY"/>
+  <microservices sourceModelUri="../../Source LEMMA Models/ChargingStationManagementCommandSide.services" name="de.puls.ChargingStationManagementCommandSide" qualifiedName="de.puls.ChargingStationManagementCommandSide" type="FUNCTIONAL" visibility="PUBLIC" effectivelyImplemented="true">
+    <technologies name="CQRS" import="//@imports.1"/>
+    <technologies name="DomainEvents" import="//@imports.2"/>
+    <technologies name="Java" import="//@imports.3"/>
+    <technologies name="Kafka" import="//@imports.4"/>
+    <technologies name="Spring" import="//@imports.5"/>
+    <endpoints communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary" technology="//@microservices.0/@technologies.3">
+      <addresses>localhost:9092</addresses>
+    </endpoints>
+    <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+    <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+    <interfaces name="CommandSide" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide" visibility="PUBLIC" hasImplementedOperations="true">
+      <endpoints communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json" technology="//@microservices.0/@technologies.4">
+        <addresses>/resources/v1</addresses>
+      </endpoints>
+      <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+      <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+      <operations name="createParkingArea" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.createParkingArea" visibility="PUBLIC">
+        <apiOperationComment comment="API endpoint for creating a parking area">
+          <parameterComments comment="Command object to specify the values of the new parking area" required="true" parameter="//@microservices.0/@interfaces.0/@operations.0/@parameters.0"/>
+        </apiOperationComment>
+        <endpoints communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json" technology="//@microservices.0/@technologies.4">
+          <addresses>/parkingarea</addresses>
+        </endpoints>
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Put" qualifiedName="Spring.Put" import="//@imports.5">
+          <featureNames>SINGLE_VALUED</featureNames>
+        </aspects>
+        <parameters name="command" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.createParkingArea.command" exchangePattern="IN" communicationType="SYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="CreateParkingAreaCommand" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.CreateParkingAreaCommand" import="//@imports.0"/>
+          <aspects name="RequestBody" qualifiedName="Spring.RequestBody" import="//@imports.5"/>
+          <aspects name="Valid" qualifiedName="Spring.Valid" import="//@imports.5"/>
+        </parameters>
+      </operations>
+      <operations name="updateParkingArea" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.updateParkingArea" visibility="PUBLIC">
+        <apiOperationComment comment="API endpoint for updating a parking area">
+          <parameterComments comment="Identifier of the parking area to be updated" required="true" parameter="//@microservices.0/@interfaces.0/@operations.1/@parameters.0"/>
+          <parameterComments comment="Command object to specify the values of the updated parking area" required="true" parameter="//@microservices.0/@interfaces.0/@operations.1/@parameters.1"/>
+        </apiOperationComment>
+        <endpoints communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json" technology="//@microservices.0/@technologies.4">
+          <addresses>/parkingarea/{id}</addresses>
+        </endpoints>
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Post" qualifiedName="Spring.Post" import="//@imports.5">
+          <featureNames>SINGLE_VALUED</featureNames>
+        </aspects>
+        <parameters name="id" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.updateParkingArea.id" exchangePattern="IN" communicationType="SYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedTechnologySpecificType" name="Long" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Long" import="//@imports.3"/>
+          <aspects name="PathVariable" qualifiedName="Spring.PathVariable" import="//@imports.5">
+            <featureNames>SINGLE_VALUED</featureNames>
+          </aspects>
+        </parameters>
+        <parameters name="command" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.updateParkingArea.command" exchangePattern="IN" communicationType="SYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="UpdateParkingAreaCommand" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.UpdateParkingAreaCommand" import="//@imports.0"/>
+          <aspects name="RequestBody" qualifiedName="Spring.RequestBody" import="//@imports.5"/>
+          <aspects name="Valid" qualifiedName="Spring.Valid" import="//@imports.5"/>
+        </parameters>
+      </operations>
+      <operations name="deleteParkingArea" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.deleteParkingArea" visibility="PUBLIC">
+        <apiOperationComment comment="API endpoint for deleting a parking area">
+          <parameterComments comment="Identifier of the parking area to be deleted" required="true" parameter="//@microservices.0/@interfaces.0/@operations.2/@parameters.0"/>
+        </apiOperationComment>
+        <endpoints communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json" technology="//@microservices.0/@technologies.4">
+          <addresses>/parkingarea/{id}</addresses>
+        </endpoints>
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Delete" qualifiedName="Spring.Delete" import="//@imports.5">
+          <featureNames>SINGLE_VALUED</featureNames>
+        </aspects>
+        <parameters name="id" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.deleteParkingArea.id" exchangePattern="IN" communicationType="SYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedTechnologySpecificType" name="Long" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Long" import="//@imports.3"/>
+          <aspects name="PathVariable" qualifiedName="Spring.PathVariable" import="//@imports.5">
+            <featureNames>SINGLE_VALUED</featureNames>
+          </aspects>
+        </parameters>
+      </operations>
+      <operations name="sendParkingAreaCreatedEvent" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaCreatedEvent" visibility="PUBLIC">
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Producer" qualifiedName="DomainEvents.Producer" import="//@imports.2">
+          <featureNames>SINGLE_VALUED</featureNames>
+          <properties name="handlerName" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <propertyValues value="ParkingAreaProducerService" property="//@microservices.0/@interfaces.0/@operations.3/@aspects.0/@properties.0"/>
+        </aspects>
+        <aspects name="AvroParticipant" qualifiedName="Kafka.AvroParticipant" import="//@imports.4">
+          <properties name="topic" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <properties name="consumerGroup" type="string"/>
+          <propertyValues value="parkingAreaCreatedEvents" property="//@microservices.0/@interfaces.0/@operations.3/@aspects.1/@properties.0"/>
+        </aspects>
+        <parameters name="event" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaCreatedEvent.event" exchangePattern="OUT" communicationType="ASYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaCreatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent" import="//@imports.0"/>
+        </parameters>
+      </operations>
+      <operations name="sendParkingAreaUpdatedEvent" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaUpdatedEvent" visibility="PUBLIC">
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Producer" qualifiedName="DomainEvents.Producer" import="//@imports.2">
+          <featureNames>SINGLE_VALUED</featureNames>
+          <properties name="handlerName" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <propertyValues value="ParkingAreaProducerService" property="//@microservices.0/@interfaces.0/@operations.4/@aspects.0/@properties.0"/>
+        </aspects>
+        <aspects name="AvroParticipant" qualifiedName="Kafka.AvroParticipant" import="//@imports.4">
+          <properties name="topic" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <properties name="consumerGroup" type="string"/>
+          <propertyValues value="parkingAreaUpdatedEvents" property="//@microservices.0/@interfaces.0/@operations.4/@aspects.1/@properties.0"/>
+        </aspects>
+        <parameters name="event" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaUpdatedEvent.event" exchangePattern="OUT" communicationType="ASYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaUpdatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaUpdatedEvent" import="//@imports.0"/>
+        </parameters>
+      </operations>
+      <operations name="sendParkingAreaDeletedEvent" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaDeletedEvent" visibility="PUBLIC">
+        <protocols communicationType="SYNCHRONOUS" protocol="rest" dataFormat="application/json"/>
+        <protocols communicationType="ASYNCHRONOUS" protocol="kafka" dataFormat="binary"/>
+        <aspects name="Producer" qualifiedName="DomainEvents.Producer" import="//@imports.2">
+          <featureNames>SINGLE_VALUED</featureNames>
+          <properties name="handlerName" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <propertyValues value="ParkingAreaProducerService" property="//@microservices.0/@interfaces.0/@operations.5/@aspects.0/@properties.0"/>
+        </aspects>
+        <aspects name="AvroParticipant" qualifiedName="Kafka.AvroParticipant" import="//@imports.4">
+          <properties name="topic" type="string">
+            <featureNames>MANDATORY</featureNames>
+          </properties>
+          <properties name="consumerGroup" type="string"/>
+          <propertyValues value="parkingAreaDeletedEvents" property="//@microservices.0/@interfaces.0/@operations.5/@aspects.1/@properties.0"/>
+        </aspects>
+        <parameters name="event" qualifiedName="de.puls.ChargingStationManagementCommandSide.CommandSide.sendParkingAreaDeletedEvent.event" exchangePattern="OUT" communicationType="ASYNCHRONOUS">
+          <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaDeletedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaDeletedEvent" import="//@imports.0"/>
+        </parameters>
+      </operations>
+    </interfaces>
+    <aspects name="CommandSide" qualifiedName="CQRS.CommandSide" import="//@imports.1">
+      <properties name="logicalService" type="string"/>
+      <propertyValues value="ChargingStationManagement" property="//@microservices.0/@aspects.0/@properties.0"/>
+    </aspects>
+    <aspects name="BootstrapAddress" qualifiedName="Kafka.BootstrapAddress" import="//@imports.4">
+      <featureNames>SINGLE_VALUED</featureNames>
+      <properties name="address" type="string">
+        <featureNames>MANDATORY</featureNames>
+      </properties>
+      <propertyValues value="localhost:9092" property="//@microservices.0/@aspects.1/@properties.0"/>
+    </aspects>
+    <aspects name="AvroRegistryAddress" qualifiedName="Kafka.AvroRegistryAddress" import="//@imports.4">
+      <featureNames>SINGLE_VALUED</featureNames>
+      <properties name="address" type="string">
+        <featureNames>MANDATORY</featureNames>
+      </properties>
+      <propertyValues value="localhost:8081" property="//@microservices.0/@aspects.2/@properties.0"/>
+    </aspects>
+    <aspects name="Application" qualifiedName="Spring.Application" import="//@imports.5">
+      <featureNames>SINGLE_VALUED</featureNames>
+      <properties name="name" type="string"/>
+      <properties name="port" type="int"/>
+      <propertyValues value="ChargingStationManagementCommandSide" property="//@microservices.0/@aspects.3/@properties.0"/>
+    </aspects>
+  </microservices>
+</intermediate:IntermediateServiceModel>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="ASCII"?>
+<intermediate:IntermediateDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intermediate="http://www.fhdo.de/lemma/data/intermediate" sourceModelUri="../../Source LEMMA Models/ChargingStationManagement.data">
+  <imports name="Java" importUri="../../Source LEMMA Models/Java.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="Spring" importUri="../../Source LEMMA Models/Spring.technology" importTypeName="TECHNOLOGY"/>
+  <imports name="Kafka" importUri="../../Source LEMMA Models/Kafka.technology" importTypeName="TECHNOLOGY"/>
+  <contexts name="ChargingStationManagement" qualifiedName="ChargingStationManagement">
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea">
+      <aspects name="Table" qualifiedName="java.Table" import="//@imports.0">
+        <featureNames>SINGLE_VALUED</featureNames>
+        <properties name="name" type="string">
+          <featureNames>MANDATORY</featureNames>
+        </properties>
+        <propertyValues value="ParkingArea" property="//@contexts.0/@complexTypes.0/@aspects.0/@properties.0"/>
+      </aspects>
+      <featureNames>AGGREGATE</featureNames>
+      <featureNames>ENTITY</featureNames>
+      <operations name="toParkingAreaInformation" qualifiedName="ChargingStationManagement.ParkingArea.toParkingAreaInformation">
+        <returnType>
+          <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+          <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        </returnType>
+      </operations>
+      <dataFields name="id" qualifiedName="ChargingStationManagement.ParkingArea.id">
+        <featureNames>IDENTIFIER</featureNames>
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Long" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Long" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="ownerId" qualifiedName="ChargingStationManagement.ParkingArea.ownerId">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Long" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Long" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="name" qualifiedName="ChargingStationManagement.ParkingArea.name">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="String" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.String" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="description" qualifiedName="ChargingStationManagement.ParkingArea.description">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="String" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.String" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="location" qualifiedName="ChargingStationManagement.ParkingArea.location">
+        <featureNames>PART</featureNames>
+        <type xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
+      </dataFields>
+      <dataFields name="parkingSpaceCount" qualifiedName="ChargingStationManagement.ParkingArea.parkingSpaceCount">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Integer" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Integer" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="int" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="availability" qualifiedName="ChargingStationManagement.ParkingArea.availability">
+        <featureNames>PART</featureNames>
+        <type xsi:type="intermediate:IntermediateComplexType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods"/>
+      </dataFields>
+      <dataFields name="pricePerHour" qualifiedName="ChargingStationManagement.ParkingArea.pricePerHour">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Float" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Float" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="pricePerKwh" qualifiedName="ChargingStationManagement.ParkingArea.pricePerKwh">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Float" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Float" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="chargerSpeed" qualifiedName="ChargingStationManagement.ParkingArea.chargerSpeed">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
+      </dataFields>
+      <dataFields name="plugType" qualifiedName="ChargingStationManagement.ParkingArea.plugType">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="String" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.String" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="activated" qualifiedName="ChargingStationManagement.ParkingArea.activated">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Boolean" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Boolean" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="blocked" qualifiedName="ChargingStationManagement.ParkingArea.blocked">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Boolean" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Boolean" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="offered" qualifiedName="ChargingStationManagement.ParkingArea.offered">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Boolean" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Boolean" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="createdDate" qualifiedName="ChargingStationManagement.ParkingArea.createdDate" immutable="true">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Date" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Date" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="lastModifiedDate" qualifiedName="ChargingStationManagement.ParkingArea.lastModifiedDate">
+        <type xsi:type="intermediate:IntermediateImportedTechnologySpecificType" name="Date" origin="TECHNOLOGY" kind="PRIMITIVE" qualifiedName="java._types.Date" import="//@imports.0"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location">
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="latitude" qualifiedName="ChargingStationManagement.Location.latitude">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="double" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="double" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="longitude" qualifiedName="ChargingStationManagement.Location.longitude">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="double" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="double" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="TimePeriod" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.TimePeriod">
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="start" qualifiedName="ChargingStationManagement.TimePeriod.start">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="end" qualifiedName="ChargingStationManagement.TimePeriod.end">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="date" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaFactory" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaFactory">
+      <featureNames>FACTORY</featureNames>
+      <operations name="fromParkingAreaInformation" qualifiedName="ChargingStationManagement.ParkingAreaFactory.fromParkingAreaInformation">
+        <returnType>
+          <type xsi:type="intermediate:IntermediateComplexType" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea">
+            <aspects name="Table" qualifiedName="java.Table" import="//@imports.0">
+              <featureNames>SINGLE_VALUED</featureNames>
+              <properties name="name" type="string">
+                <featureNames>MANDATORY</featureNames>
+              </properties>
+              <propertyValues value="ParkingArea" property="//@contexts.0/@complexTypes.3/@operations.0/@returnType/@type/@aspects.0/@properties.0"/>
+            </aspects>
+          </type>
+          <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea">
+            <aspects name="Table" qualifiedName="java.Table" import="//@imports.0">
+              <featureNames>SINGLE_VALUED</featureNames>
+              <properties name="name" type="string">
+                <featureNames>MANDATORY</featureNames>
+              </properties>
+              <propertyValues value="ParkingArea" property="//@contexts.0/@complexTypes.3/@operations.0/@returnType/@originalType/@aspects.0/@properties.0"/>
+            </aspects>
+          </originalType>
+        </returnType>
+        <parameters name="info" qualifiedName="ChargingStationManagement.ParkingAreaFactory.fromParkingAreaInformation.info">
+          <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+          <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        </parameters>
+      </operations>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaRepository" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaRepository">
+      <aspects name="CrudRepository" qualifiedName="Spring.CrudRepository" import="//@imports.1"/>
+      <featureNames>REPOSITORY</featureNames>
+      <dataFields name="managedParkingAreas" qualifiedName="ChargingStationManagement.ParkingAreaRepository.managedParkingAreas">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreas" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.ParkingAreas"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreas" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.ParkingAreas"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="CreateParkingAreaCommand" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.CreateParkingAreaCommand">
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="info" qualifiedName="ChargingStationManagement.CreateParkingAreaCommand.info" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaCreatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent">
+      <aspects name="AvroSchema" qualifiedName="Kafka.AvroSchema" import="//@imports.2">
+        <featureNames>SINGLE_VALUED</featureNames>
+        <properties name="file" type="string">
+          <featureNames>MANDATORY</featureNames>
+        </properties>
+        <properties name="type" type="string"/>
+        <properties name="fromResources" type="boolean" defaultValue="true"/>
+        <propertyValues value="ParkingAreaCreatedEvent.avsc" property="//@contexts.0/@complexTypes.6/@aspects.0/@properties.0"/>
+      </aspects>
+      <featureNames>DOMAIN_EVENT</featureNames>
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="parkingAreaId" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.parkingAreaId">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="info" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.info" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation">
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="ownerId" qualifiedName="ChargingStationManagement.ParkingAreaInformation.ownerId" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="name" qualifiedName="ChargingStationManagement.ParkingAreaInformation.name" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="description" qualifiedName="ChargingStationManagement.ParkingAreaInformation.description" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+      <dataFields name="location" qualifiedName="ChargingStationManagement.ParkingAreaInformation.location" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
+      </dataFields>
+      <dataFields name="spacesCount" qualifiedName="ChargingStationManagement.ParkingAreaInformation.spacesCount" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="int" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="int" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="availability" qualifiedName="ChargingStationManagement.ParkingAreaInformation.availability" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods"/>
+      </dataFields>
+      <dataFields name="pricePerHour" qualifiedName="ChargingStationManagement.ParkingAreaInformation.pricePerHour" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="activated" qualifiedName="ChargingStationManagement.ParkingAreaInformation.activated" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="blocked" qualifiedName="ChargingStationManagement.ParkingAreaInformation.blocked" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="offered" qualifiedName="ChargingStationManagement.ParkingAreaInformation.offered" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
+      </dataFields>
+      <dataFields name="pricePerKwh" qualifiedName="ChargingStationManagement.ParkingAreaInformation.pricePerKwh" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="chargerSpeed" qualifiedName="ChargingStationManagement.ParkingAreaInformation.chargerSpeed" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
+      </dataFields>
+      <dataFields name="plugType" qualifiedName="ChargingStationManagement.ParkingAreaInformation.plugType" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="UpdateParkingAreaCommand" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.UpdateParkingAreaCommand">
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="info" qualifiedName="ChargingStationManagement.UpdateParkingAreaCommand.info" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaUpdatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaUpdatedEvent">
+      <aspects name="AvroSchema" qualifiedName="Kafka.AvroSchema" import="//@imports.2">
+        <featureNames>SINGLE_VALUED</featureNames>
+        <properties name="file" type="string">
+          <featureNames>MANDATORY</featureNames>
+        </properties>
+        <properties name="type" type="string"/>
+        <properties name="fromResources" type="boolean" defaultValue="true"/>
+        <propertyValues value="ParkingAreaUpdatedEvent.avsc" property="//@contexts.0/@complexTypes.9/@aspects.0/@properties.0"/>
+      </aspects>
+      <featureNames>DOMAIN_EVENT</featureNames>
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="parkingAreaId" qualifiedName="ChargingStationManagement.ParkingAreaUpdatedEvent.parkingAreaId">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="info" qualifiedName="ChargingStationManagement.ParkingAreaUpdatedEvent.info" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaDeletedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaDeletedEvent">
+      <featureNames>DOMAIN_EVENT</featureNames>
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="parkingAreaId" qualifiedName="ChargingStationManagement.ParkingAreaDeletedEvent.parkingAreaId">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateListType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods" structuredList="true">
+      <dataFields name="p" qualifiedName="ChargingStationManagement.TimePeriods.p">
+        <type xsi:type="intermediate:IntermediateComplexType" name="TimePeriod" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.TimePeriod"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="TimePeriod" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.TimePeriod"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateListType" name="ParkingAreas" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.ParkingAreas" structuredList="true">
+      <dataFields name="p" qualifiedName="ChargingStationManagement.ParkingAreas.p">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea">
+          <aspects name="Table" qualifiedName="java.Table" import="//@imports.0">
+            <featureNames>SINGLE_VALUED</featureNames>
+            <properties name="name" type="string">
+              <featureNames>MANDATORY</featureNames>
+            </properties>
+            <propertyValues value="ParkingArea" property="//@contexts.0/@complexTypes.12/@dataFields.0/@originalType/@aspects.0/@properties.0"/>
+          </aspects>
+        </originalType>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateListType" name="ParkingAreaInformationList" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.ParkingAreaInformationList" structuredList="true">
+      <dataFields name="i" qualifiedName="ChargingStationManagement.ParkingAreaInformationList.i">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateEnumeration" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed">
+      <fields name="FAST" qualifiedName="ChargingStationManagement.ChargerSpeed.FAST"/>
+      <fields name="NORMAL" qualifiedName="ChargingStationManagement.ChargerSpeed.NORMAL"/>
+    </complexTypes>
+  </contexts>
+</intermediate:IntermediateDataModel>

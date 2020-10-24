@@ -1,0 +1,35 @@
+technology Kafka {
+	protocols {
+		async kafka data formats "binary" default with format "binary";
+		async zookeeper data formats "zookeeper" default with format "zookeeper";
+	}
+
+	service aspects {
+		aspect BootstrapAddress<singleval> for microservices {
+			string address<mandatory>;
+		}
+		aspect Participant for operations {
+			selector(protocol = kafka);
+			string topic<mandatory>;
+			string consumerGroup;
+		}
+		aspect ErrorHandlingConfiguration for operations {
+			long retriesUponError;
+			//long retryInterval;
+		}
+
+		aspect AvroRegistryAddress<singleval> for microservices {
+			string address<mandatory>;
+		}
+		aspect AvroParticipant for operations {
+			selector(protocol = kafka);
+			string topic<mandatory>;
+			string consumerGroup;
+		}
+		aspect AvroSchema<singleval> for types, fields {
+			string file<mandatory>;
+			string ^type;
+			boolean fromResources = true;
+		}
+	}
+}

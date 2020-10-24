@@ -1,0 +1,4 @@
+package de.puls.service.ChargingStationManagementQuerySide.gen;
+
+public abstract class ChargingStationManagementQuerySideGenImpl implements ChargingStationManagementQuerySideGen {
+}

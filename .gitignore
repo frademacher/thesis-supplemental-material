@@ -1,0 +1,30 @@
+/*
+!/Chapter 8 - Greenfield Validation Package/
+/Chapter 8 - Greenfield Validation Package/ParkingAreaCreatedEvent.avsc
+/Chapter 8 - Greenfield Validation Package/**/*-diss.sh
+/Chapter 8 - Greenfield Validation Package/Intermediate LEMMA Models (old - without MIME types)
+/Chapter 8 - Greenfield Validation Package/Source LEMMA Models (old - without MIME types)
+
+#!Chapter 9 - Brownfield Validation Package!
+/Chapter 9 - Brownfield Validation Package/Reconstruction LEMMA Models/Notes.odt
+/Chapter 9 - Brownfield Validation Package/**/*-diss.sh
+/Chapter 9 - Brownfield Validation Package/Metrics/
+/Chapter 9 - Brownfield Validation Package/Reconstruction LEMMA Models (old - without MIME types)
+
+!.gitignore
+
+.metadata/
+bin/
+.launch/
+Trash/
+target/
+.gradle/
+*.java._trace
+*.xtendbin
+*.xtextbin
+out/
+build/
+.idea/
+.~lock*
+*.iml
+*.hprof

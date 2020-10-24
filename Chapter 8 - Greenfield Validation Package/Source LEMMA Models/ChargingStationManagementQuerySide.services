@@ -1,0 +1,90 @@
+import datatypes from "ChargingStationManagement.data" as Domain
+import microservices from "ChargingStationManagementCommandSide.services" as CommandSide
+import technology from "Cqrs.technology" as CQRS
+import technology from "DomainEvents.technology" as DomainEvents
+import technology from "Java.technology" as Java
+import technology from "Kafka.technology" as Kafka
+import technology from "Spring.technology" as Spring
+
+@technology(CQRS)
+@technology(DomainEvents)
+@technology(Java)
+@technology(Kafka)
+@technology(Spring)
+@endpoints(Kafka::_protocols.kafka: "localhost:9092";)
+@CQRS::_aspects.QuerySide("ChargingStationManagement")
+@Kafka::_aspects.BootstrapAddress("localhost:9092")
+@Kafka::_aspects.AvroRegistryAddress("localhost:8081")
+@Spring::_aspects.Application(name="ChargingStationManagementQuerySide", port=8085)
+public functional microservice de.puls.ChargingStationManagementQuerySide {
+	required microservices {
+		CommandSide::de.puls.ChargingStationManagementCommandSide
+	}
+
+	@endpoints(Spring::_protocols.rest: "/resources/v1";)
+	interface QuerySide {
+		---
+		API endpoint for retrieving information about a single parking area
+		@required id Identifier of the parking area
+		---
+		@endpoints(Spring::_protocols.rest: "/parkingarea/id/{id}";)
+		@Spring::_aspects.Get
+		getParkingArea(
+			@Spring::_aspects.PathVariable
+			sync id : long,
+
+			@Spring::_aspects.ResponseEntity
+			sync out parkingArea : Domain::ChargingStationManagement.ParkingAreaInformation,
+
+			@Spring::_aspects.ResponseStatus("NOT_FOUND")
+			sync out fault parkingAreaNotFound : string
+		);
+
+		---
+		API endpoint for retrieving all parking areas in a given geographic area
+		@required northEastBound Coordinates for north-east area bound
+		@required southWestBound Coordinates for south-west area bound
+		---
+		@endpoints(Spring::_protocols.rest: "/parkingarea/geo";)
+		@Spring::_aspects.Get
+		getParkingAreas(
+			@Spring::_aspects.RequestBody
+			@Spring::_aspects.Valid
+			sync northEastBound : Domain::ChargingStationManagement.Location,
+
+			@Spring::_aspects.RequestBody
+			@Spring::_aspects.Valid
+			sync southWestBound : Domain::ChargingStationManagement.Location,
+
+			@Spring::_aspects.ResponseEntity
+			sync out parkingAreas : Domain::ChargingStationManagement.ParkingAreaInformationList,
+
+			@Spring::_aspects.ResponseStatus("NOT_FOUND")
+			sync out fault noParkingAreasFound : string
+		);
+
+		@Kafka::_aspects.AvroParticipant(
+			topic="parkingAreaEvents",
+			consumerGroup="parkingAreaEvents"
+		)
+		receiveParkingAreaCreatedEvent(
+			async event : Domain::ChargingStationManagement.ParkingAreaCreatedEvent
+		);
+
+		@Kafka::_aspects.AvroParticipant(
+			topic="parkingAreaEvents",
+			consumerGroup="parkingAreaEvents"
+		)
+		receiveParkingAreaUpdatedEvent(
+			async event : Domain::ChargingStationManagement.ParkingAreaUpdatedEvent
+		);
+
+		@Kafka::_aspects.AvroParticipant(
+			topic="parkingAreaEvents",
+			consumerGroup="parkingAreaEvents"
+		)
+		receiveParkingAreaDeletedEvent(
+			async event : Domain::ChargingStationManagement.ParkingAreaDeletedEvent
+		);
+	}
+}

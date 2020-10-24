@@ -1,0 +1,36 @@
+import microservices from "ChargingStationManagementQuerySide.services" as QuerySideServices
+import technology from "Java.technology" as Java
+import technology from "Kafka.technology" as Kafka
+import technology from "Spring.technology" as Spring
+
+@technology(Kafka)
+type QuerySideServices::Domain::ChargingStationManagement.ParkingAreaCreatedEvent {
+	aspects {
+		Kafka::_aspects.AvroSchema(
+			file="ParkingAreaCreatedEvent.avsc"
+		);
+	}
+}
+
+@technology(Kafka)
+type QuerySideServices::Domain::ChargingStationManagement.ParkingAreaUpdatedEvent {
+	aspects {
+		Kafka::_aspects.AvroSchema(
+			file="ParkingAreaUpdatedEvent.avsc"
+		);
+	}
+}
+
+@technology(Java)
+type QuerySideServices::Domain::ChargingStationManagement.ParkingArea {
+	aspects {
+		Java::_aspects.Table("ParkingArea");
+	}
+}
+
+@technology(Spring)
+type QuerySideServices::Domain::ChargingStationManagement.ParkingAreaRepository {
+	aspects {
+		Spring::_aspects.CrudRepository;
+	}
+}

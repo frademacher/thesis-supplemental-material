@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<intermediate:IntermediateServiceModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:intermediate="http://www.fhdo.de/lemma/service/intermediate"
+    sourceModelUri="">
+  <imports name="OrderServices"
+      importUri="file:///intermediate/service models/Order.xmi"
+      importTypeName="MICROSERVICES"/>
+  <imports name="Java"
+      importUri="file:///Java.technology"
+      importTypeName="TECHNOLOGY"/>
+  <imports name="Spring"
+      importUri="file:///Spring.technology"
+      importTypeName="TECHNOLOGY"/>
+  <imports name="OrderDomain"
+      importUri="file:///intermediate/mapping models/Order/OrderDomain_Order.xmi"
+      importTypeName="DATATYPES"/>
+  <imports name="Common"
+      importUri="file:///intermediate/mapping models/Order/Common_Common.xmi"
+      importTypeName="DATATYPES"/>
+</intermediate:IntermediateServiceModel>

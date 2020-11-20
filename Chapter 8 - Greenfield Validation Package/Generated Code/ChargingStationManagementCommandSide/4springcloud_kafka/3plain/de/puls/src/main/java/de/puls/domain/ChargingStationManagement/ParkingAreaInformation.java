@@ -29,10 +29,10 @@ public class ParkingAreaInformation {
         return location;
     }
 
-    private int spacesCount;
+    private int parkingSpaceCount;
 
-    public int getSpacesCount() {
-        return spacesCount;
+    public int getParkingSpaceCount() {
+        return parkingSpaceCount;
     }
 
     private TimePeriods availability;
@@ -45,6 +45,12 @@ public class ParkingAreaInformation {
 
     public float getPricePerHour() {
         return pricePerHour;
+    }
+
+    private float pricePerKwh;
+
+    public float getPricePerKwh() {
+        return pricePerKwh;
     }
 
     private boolean activated;
@@ -65,12 +71,6 @@ public class ParkingAreaInformation {
         return offered;
     }
 
-    private float pricePerKwh;
-
-    public float getPricePerKwh() {
-        return pricePerKwh;
-    }
-
     private ChargerSpeed chargerSpeed;
 
     public ChargerSpeed getChargerSpeed() {
@@ -83,18 +83,18 @@ public class ParkingAreaInformation {
         return plugType;
     }
 
-    public ParkingAreaInformation(long ownerId, String name, String description, Location location, int spacesCount, TimePeriods availability, float pricePerHour, boolean activated, boolean blocked, boolean offered, float pricePerKwh, ChargerSpeed chargerSpeed, String plugType) {
+    public ParkingAreaInformation(long ownerId, String name, String description, Location location, int parkingSpaceCount, TimePeriods availability, float pricePerHour, float pricePerKwh, boolean activated, boolean blocked, boolean offered, ChargerSpeed chargerSpeed, String plugType) {
         this.ownerId = ownerId;
         this.name = name;
         this.description = description;
         this.location = location;
-        this.spacesCount = spacesCount;
+        this.parkingSpaceCount = parkingSpaceCount;
         this.availability = availability;
         this.pricePerHour = pricePerHour;
+        this.pricePerKwh = pricePerKwh;
         this.activated = activated;
         this.blocked = blocked;
         this.offered = offered;
-        this.pricePerKwh = pricePerKwh;
         this.chargerSpeed = chargerSpeed;
         this.plugType = plugType;
     }

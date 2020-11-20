@@ -14,19 +14,19 @@ public interface ParkingAreaInformationGen {
 
     Location getLocation();
 
-    int getSpacesCount();
+    int getParkingSpaceCount();
 
     TimePeriods getAvailability();
 
     float getPricePerHour();
+
+    float getPricePerKwh();
 
     boolean getActivated();
 
     boolean getBlocked();
 
     boolean getOffered();
-
-    float getPricePerKwh();
 
     ChargerSpeed getChargerSpeed();
 

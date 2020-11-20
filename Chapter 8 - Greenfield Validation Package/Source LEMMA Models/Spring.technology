@@ -4,11 +4,11 @@ technology Spring {
     }
 
     service aspects {
-    	aspect Application<singleval> for microservices {
-    		string name;
-    		int port;
-    	}
-    	aspect CrudRepository for types;
+        aspect Application<singleval> for microservices {
+            string name;
+            int port;
+        }
+        aspect CrudRepository for types;
         aspect Transactional<singleval> for types;
         aspect Post<singleval> for operations {
             selector(protocol = rest);
@@ -28,16 +28,16 @@ technology Spring {
         aspect PathVariable<singleval> for parameters {
             selector(protocol = rest, exchange_pattern = in);
         }
-        aspect RequestBody for parameters {
-			selector(exchange_pattern = in);
-		}
         aspect ResponseEntity<singleval> for parameters {
             selector(protocol = rest, exchange_pattern = out);
         }
+        aspect RequestBody for parameters {
+            selector(exchange_pattern = in);
+        }
         aspect ResponseStatus for parameters {
-			selector(exchange_pattern = out);
-			string status <mandatory>;
-		}
+            selector(exchange_pattern = out);
+            string status <mandatory>;
+        }
         aspect Valid for parameters;
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<intermediate:IntermediateDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intermediate="http://www.fhdo.de/lemma/data/intermediate" sourceModelUri="../../Source LEMMA Models/ChargingStationManagement.data">
+<intermediate:IntermediateDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intermediate="http://www.fhdo.de/lemma/data/intermediate" sourceModelUri="file://../../Source LEMMA Models/ChargingStationManagement.data">
   <contexts name="ChargingStationManagement" qualifiedName="ChargingStationManagement">
     <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingArea" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingArea">
       <featureNames>AGGREGATE</featureNames>
@@ -127,18 +127,6 @@
         <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
       </dataFields>
     </complexTypes>
-    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaCreatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent">
-      <featureNames>DOMAIN_EVENT</featureNames>
-      <featureNames>VALUE_OBJECT</featureNames>
-      <dataFields name="parkingAreaId" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.parkingAreaId">
-        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
-        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
-      </dataFields>
-      <dataFields name="info" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.info" immutable="true">
-        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
-        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
-      </dataFields>
-    </complexTypes>
     <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation">
       <featureNames>VALUE_OBJECT</featureNames>
       <dataFields name="ownerId" qualifiedName="ChargingStationManagement.ParkingAreaInformation.ownerId" immutable="true">
@@ -157,7 +145,7 @@
         <type xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
         <originalType xsi:type="intermediate:IntermediateComplexType" name="Location" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.Location"/>
       </dataFields>
-      <dataFields name="spacesCount" qualifiedName="ChargingStationManagement.ParkingAreaInformation.spacesCount" immutable="true">
+      <dataFields name="parkingSpaceCount" qualifiedName="ChargingStationManagement.ParkingAreaInformation.parkingSpaceCount" immutable="true">
         <type xsi:type="intermediate:IntermediatePrimitiveType" name="int" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
         <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="int" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
       </dataFields>
@@ -166,6 +154,10 @@
         <originalType xsi:type="intermediate:IntermediateComplexType" name="TimePeriods" origin="DATA_MODEL" kind="LIST" qualifiedName="ChargingStationManagement.TimePeriods"/>
       </dataFields>
       <dataFields name="pricePerHour" qualifiedName="ChargingStationManagement.ParkingAreaInformation.pricePerHour" immutable="true">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
+      </dataFields>
+      <dataFields name="pricePerKwh" qualifiedName="ChargingStationManagement.ParkingAreaInformation.pricePerKwh" immutable="true">
         <type xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
         <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
       </dataFields>
@@ -181,10 +173,6 @@
         <type xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
         <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="boolean" origin="BUILTIN" kind="PRIMITIVE" size="1"/>
       </dataFields>
-      <dataFields name="pricePerKwh" qualifiedName="ChargingStationManagement.ParkingAreaInformation.pricePerKwh" immutable="true">
-        <type xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
-        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="float" origin="BUILTIN" kind="PRIMITIVE" size="32"/>
-      </dataFields>
       <dataFields name="chargerSpeed" qualifiedName="ChargingStationManagement.ParkingAreaInformation.chargerSpeed" immutable="true">
         <type xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
         <originalType xsi:type="intermediate:IntermediateComplexType" name="ChargerSpeed" origin="DATA_MODEL" kind="ENUMERATION" qualifiedName="ChargingStationManagement.ChargerSpeed"/>
@@ -192,6 +180,18 @@
       <dataFields name="plugType" qualifiedName="ChargingStationManagement.ParkingAreaInformation.plugType" immutable="true">
         <type xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
         <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="string" origin="BUILTIN" kind="PRIMITIVE"/>
+      </dataFields>
+    </complexTypes>
+    <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="ParkingAreaCreatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent">
+      <featureNames>DOMAIN_EVENT</featureNames>
+      <featureNames>VALUE_OBJECT</featureNames>
+      <dataFields name="parkingAreaId" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.parkingAreaId">
+        <type xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+        <originalType xsi:type="intermediate:IntermediatePrimitiveType" name="long" origin="BUILTIN" kind="PRIMITIVE" size="64"/>
+      </dataFields>
+      <dataFields name="info" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent.info" immutable="true">
+        <type xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
+        <originalType xsi:type="intermediate:IntermediateComplexType" name="ParkingAreaInformation" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaInformation"/>
       </dataFields>
     </complexTypes>
     <complexTypes xsi:type="intermediate:IntermediateDataStructure" name="UpdateParkingAreaCommand" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.UpdateParkingAreaCommand">

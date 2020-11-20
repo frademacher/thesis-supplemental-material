@@ -605,7 +605,8 @@ def print_and_var_ratio_info(service, stepName, languageAndLocInfos, domainOnly,
     )
 
 def store_variables(filepath):
-    with open(filepath, 'a') as file:
+    #with open(filepath, 'a') as file:
+    with open(filepath, 'w') as file:
         file.write('\n')
         for name in sorted(TEX_VARS.keys()):
             value = TEX_VARS[name]

@@ -12,7 +12,7 @@ public class ParkingAreaInformation extends ParkingAreaInformationGenImpl {
         super();
     }
 
-    public ParkingAreaInformation(long ownerId, String name, String description, Location location, int spacesCount, TimePeriods availability, float pricePerHour, boolean activated, boolean blocked, boolean offered, float pricePerKwh, ChargerSpeed chargerSpeed, String plugType) {
-        super(ownerId, name, description, location, spacesCount, availability, pricePerHour, activated, blocked, offered, pricePerKwh, chargerSpeed, plugType);
+    public ParkingAreaInformation(long ownerId, String name, String description, Location location, int parkingSpaceCount, TimePeriods availability, float pricePerHour, float pricePerKwh, boolean activated, boolean blocked, boolean offered, ChargerSpeed chargerSpeed, String plugType) {
+        super(ownerId, name, description, location, parkingSpaceCount, availability, pricePerHour, pricePerKwh, activated, blocked, offered, chargerSpeed, plugType);
     }
 }

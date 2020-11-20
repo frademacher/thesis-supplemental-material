@@ -5,18 +5,21 @@ import technology from "Spring.technology" as Spring
 
 @technology(Kafka)
 type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaCreatedEvent {
-	aspects {
-		Kafka::_aspects.AvroSchema(
-			file="ParkingAreaCreatedEvent.avsc"
-		);
-	}
+    aspects {
+        Kafka::_aspects.AvroSchema(file="ParkingAreaCreatedEvent.avsc");
+    }
 }
 
 @technology(Kafka)
 type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaUpdatedEvent {
-	aspects {
-		Kafka::_aspects.AvroSchema(
-			file="ParkingAreaUpdatedEvent.avsc"
-		);
-	}
+    aspects {
+        Kafka::_aspects.AvroSchema(file="ParkingAreaUpdatedEvent.avsc");
+    }
+}
+
+@technology(Kafka)
+type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaDeletedEvent {
+    aspects {
+        Kafka::_aspects.AvroSchema(file="ParkingAreaDeletedEvent.avsc");
+    }
 }

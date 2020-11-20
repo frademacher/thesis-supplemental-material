@@ -30,10 +30,10 @@ prepare_generation() {
     bash export_java_home.sh
 
     mvn install:install-file \
-        -Dfile=libs/de.fhdo.lemma.msa-0.0.1-SNAPSHOT.jar \
+        -Dfile=libs/de.fhdo.lemma.msa-0.7.0-SNAPSHOT.jar \
         -DgroupId=de.fhdo.lemma.msa \
         -DartifactId=de.fhdo.lemma.msa \
-        -Dversion=0.0.1-SNAPSHOT \
+        -Dversion=0.7.0-SNAPSHOT \
         -Dpackaging=jar
 }
 

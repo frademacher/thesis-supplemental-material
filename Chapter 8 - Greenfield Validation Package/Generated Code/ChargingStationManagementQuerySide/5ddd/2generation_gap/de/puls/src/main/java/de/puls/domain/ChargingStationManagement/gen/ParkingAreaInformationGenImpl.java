@@ -38,11 +38,11 @@ public abstract class ParkingAreaInformationGenImpl implements DddValueObject, P
         return location;
     }
 
-    protected int spacesCount;
+    protected int parkingSpaceCount;
 
     @Override
-    public int getSpacesCount() {
-        return spacesCount;
+    public int getParkingSpaceCount() {
+        return parkingSpaceCount;
     }
 
     protected TimePeriods availability;
@@ -57,6 +57,13 @@ public abstract class ParkingAreaInformationGenImpl implements DddValueObject, P
     @Override
     public float getPricePerHour() {
         return pricePerHour;
+    }
+
+    protected float pricePerKwh;
+
+    @Override
+    public float getPricePerKwh() {
+        return pricePerKwh;
     }
 
     protected boolean activated;
@@ -80,13 +87,6 @@ public abstract class ParkingAreaInformationGenImpl implements DddValueObject, P
         return offered;
     }
 
-    protected float pricePerKwh;
-
-    @Override
-    public float getPricePerKwh() {
-        return pricePerKwh;
-    }
-
     protected ChargerSpeed chargerSpeed;
 
     @Override
@@ -101,18 +101,18 @@ public abstract class ParkingAreaInformationGenImpl implements DddValueObject, P
         return plugType;
     }
 
-    public ParkingAreaInformationGenImpl(long ownerId, String name, String description, Location location, int spacesCount, TimePeriods availability, float pricePerHour, boolean activated, boolean blocked, boolean offered, float pricePerKwh, ChargerSpeed chargerSpeed, String plugType) {
+    public ParkingAreaInformationGenImpl(long ownerId, String name, String description, Location location, int parkingSpaceCount, TimePeriods availability, float pricePerHour, float pricePerKwh, boolean activated, boolean blocked, boolean offered, ChargerSpeed chargerSpeed, String plugType) {
         this.ownerId = ownerId;
         this.name = name;
         this.description = description;
         this.location = location;
-        this.spacesCount = spacesCount;
+        this.parkingSpaceCount = parkingSpaceCount;
         this.availability = availability;
         this.pricePerHour = pricePerHour;
+        this.pricePerKwh = pricePerKwh;
         this.activated = activated;
         this.blocked = blocked;
         this.offered = offered;
-        this.pricePerKwh = pricePerKwh;
         this.chargerSpeed = chargerSpeed;
         this.plugType = plugType;
     }

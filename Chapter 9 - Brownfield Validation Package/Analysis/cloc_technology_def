@@ -1,0 +1,5 @@
+LemmaTechnology
+    filter rm_comments_in_strings " /* */
+    filter rm_comments_in_strings " //
+    extension technology
+    3rd_gen_scale 5.00

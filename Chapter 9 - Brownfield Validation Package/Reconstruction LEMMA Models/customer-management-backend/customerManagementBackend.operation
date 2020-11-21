@@ -1,0 +1,49 @@
+import microservices from "customerManagementBackend.services" as customerManagementServices
+import technology from "../technology/docker.technology" as containerTechnology
+import technology from "../technology/spring.technology" as protocolTechnology
+
+@technology(containerTechnology)
+@technology(protocolTechnology)
+container CustomerManagementContainer deployment technology containerTechnology::_deployment.Docker
+	deploys customerManagementServices
+		::com.lakesidemutual.customerManagementBackend.CustomerManagementBackend {
+	customerManagementServices
+		::com.lakesidemutual.customerManagementBackend.CustomerManagementBackend {
+		Dockerfile('
+			# syntax=docker/dockerfile:experimental
+			FROM maven:3.6.1-jdk-8-alpine AS build
+			ARG BASE=/usr/src/app
+			COPY pom.xml ${BASE}/
+			COPY src ${BASE}/src
+			RUN --mount=type=cache,target=/root/.m2 mvn -f ${BASE}/pom.xml install -DskipTests
+
+			FROM openjdk:8-jdk-alpine
+			COPY --from=build /usr/src/app/target/dependency/BOOT-INF/lib/* /app/lib/
+			COPY --from=build /usr/src/app/target/dependency/META-INF /app/META-INF
+			COPY --from=build /usr/src/app/target/dependency/BOOT-INF/classes /app
+
+			EXPOSE 8100
+			ENTRYPOINT ["java","-cp","app:app/lib/*","com.lakesidemutual.customermanagement.CustomerManagementApplication"]
+		')
+
+		ComposePart('
+			customer-management-backend:
+			    build: customer-management-backend
+			    image: lakesidemutual/customer-management-backend
+			    depends_on:
+			      - customer-core
+			    environment:
+			      - "EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka"
+			      - "SPRING_PROFILES_ACTIVE=eureka"
+			    ports:
+			      - "8100:8100"
+			    volumes:
+			      - "maven_repo:/root/.m2"
+		')
+
+		apiKeyHeader = "Authorization"
+		apiKeyValue= "9b93ebe19e16bbbd"
+
+		basic endpoints { protocolTechnology::_protocols.rest: "http://localhost:8100"; }
+	}
+}

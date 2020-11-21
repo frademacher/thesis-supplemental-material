@@ -1,0 +1,1966 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 1: Line Counts (Lakeside Mutual complete)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     850 text files.
+classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
+Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     589 files ignored.
+
+github.com/AlDanial/cloc v 1.84  T=0.36 s (727.0 files/s, 46870.8 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                           219           2384           1794           9012
+XML                              6              0              0           1287
+Maven                            6             60              7           1169
+Markdown                         9            169              0            388
+YAML                             2              0             30            214
+Properties                      11             42              0            113
+Dockerfile                       6             12              6             68
+Bourne Shell                     1              2              1             36
+DOS Batch                        1              6              2             25
+-------------------------------------------------------------------------------
+SUM:                           261           2675           1840          12312
+-------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 1: Line Counts (Lakeside Mutual top-level elements)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     100 files     200 files     300 files     400 files     500 files     600 files     700 files     800 files     850 text files.
+classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
+Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     844 files ignored.
+
+github.com/AlDanial/cloc v 1.84  T=0.09 s (63.9 files/s, 5193.6 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+YAML                             2              0             30            214
+Markdown                         2             51              0            121
+Bourne Shell                     1              2              1             36
+DOS Batch                        1              6              2             25
+-------------------------------------------------------------------------------
+SUM:                             6             59             33            396
+-------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 1: Line Counts (LEMMA complete)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      59 text files.
+classified 59 files      55 unique files.                              
+      35 files ignored.
+
+github.com/AlDanial/cloc v 1.84  T=0.01 s (1673.0 files/s, 289698.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+LEMMA                           25            684              0           3645
+-------------------------------------------------------------------------------
+SUM:                            25            684              0           3645
+-------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 1: Line Counts (LEMMA technology)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      59 text files.
+classified 59 files      55 unique files.                              
+      53 files ignored.
+
+github.com/AlDanial/cloc v 1.84  T=0.01 s (632.6 files/s, 29281.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+LemmaTechnology                  7             32              0            292
+-------------------------------------------------------------------------------
+SUM:                             7             32              0            292
+-------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 2: Domain Model Information for Microservice customerCore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Domain Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore/domain_customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Bounded Contexts: 1
+
+- # Data Structures per Bounded Context
+	- customerCore: 18
+	- Total Data Structure Count: 18
+
+- # Enumerations per Bounded Context
+	- customerCore: 1
+	- Total Enumeration Count: 1
+
+- # List Types per Bounded Context
+	- customerCore: 6
+	- Total List Type Count: 6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Features (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Features
+	- AGGREGATE: 1
+	- APPLICATION_SERVICE: 1
+	- DOMAIN_SERVICE: 1
+	- ENTITY: 2
+	- FACTORY: 1
+	- REPOSITORY: 1
+	- SPECIFICATION: 1
+	- VALUE_OBJECT: 8
+
+- # Features per bounded context
+	- customerCore
+		- AGGREGATE: 1
+		- APPLICATION_SERVICE: 1
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 2
+		- FACTORY: 1
+		- REPOSITORY: 1
+		- SPECIFICATION: 1
+		- VALUE_OBJECT: 8
+
+- # Features per complex type kind
+	- STRUCTURE
+		- AGGREGATE: 1
+		- APPLICATION_SERVICE: 1
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 2
+		- FACTORY: 1
+		- REPOSITORY: 1
+		- SPECIFICATION: 1
+		- VALUE_OBJECT: 8
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 2: Domain Model Information for Microservice customerManagementBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Domain Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend/customerManagementBackend_customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Bounded Contexts: 1
+
+- # Data Structures per Bounded Context
+	- customerManagementBackend: 14
+	- Total Data Structure Count: 14
+
+- # Enumerations per Bounded Context
+	- customerManagementBackend: 0
+	- Total Enumeration Count: 0
+
+- # List Types per Bounded Context
+	- customerManagementBackend: 5
+	- Total List Type Count: 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Features (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Features
+	- AGGREGATE: 1
+	- DOMAIN_SERVICE: 1
+	- ENTITY: 2
+	- REPOSITORY: 1
+	- VALUE_OBJECT: 10
+
+- # Features per bounded context
+	- customerManagementBackend
+		- AGGREGATE: 1
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 2
+		- REPOSITORY: 1
+		- VALUE_OBJECT: 10
+
+- # Features per complex type kind
+	- STRUCTURE
+		- AGGREGATE: 1
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 2
+		- REPOSITORY: 1
+		- VALUE_OBJECT: 10
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 2: Domain Model Information for Microservice customerSelfServiceBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Domain Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend/customerSelfServiceBackend_customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Bounded Contexts: 1
+
+- # Data Structures per Bounded Context
+	- customerSelfService: 41
+	- Total Data Structure Count: 41
+
+- # Enumerations per Bounded Context
+	- customerSelfService: 1
+	- Total Enumeration Count: 1
+
+- # List Types per Bounded Context
+	- customerSelfService: 9
+	- Total List Type Count: 9
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Features (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Features
+	- AGGREGATE: 1
+	- DOMAIN_EVENT: 5
+	- DOMAIN_SERVICE: 1
+	- ENTITY: 5
+	- INFRASTRUCTURE_SERVICE: 2
+	- REPOSITORY: 2
+	- SPECIFICATION: 1
+	- VALUE_OBJECT: 30
+
+- # Features per bounded context
+	- customerSelfService
+		- AGGREGATE: 1
+		- DOMAIN_EVENT: 5
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 5
+		- INFRASTRUCTURE_SERVICE: 2
+		- REPOSITORY: 2
+		- SPECIFICATION: 1
+		- VALUE_OBJECT: 30
+
+- # Features per complex type kind
+	- ENUMERATION
+		- VALUE_OBJECT: 1
+	- STRUCTURE
+		- AGGREGATE: 1
+		- DOMAIN_EVENT: 5
+		- DOMAIN_SERVICE: 1
+		- ENTITY: 5
+		- INFRASTRUCTURE_SERVICE: 2
+		- REPOSITORY: 2
+		- SPECIFICATION: 1
+		- VALUE_OBJECT: 29
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 2: Domain Model Information for Microservice policyManagementBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Domain Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend/policyManagementBackend_policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Bounded Contexts: 1
+
+- # Data Structures per Bounded Context
+	- policyManagement: 48
+	- Total Data Structure Count: 48
+
+- # Enumerations per Bounded Context
+	- policyManagement: 1
+	- Total Enumeration Count: 1
+
+- # List Types per Bounded Context
+	- policyManagement: 12
+	- Total List Type Count: 12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Domain Features (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Features
+	- AGGREGATE: 2
+	- DOMAIN_EVENT: 7
+	- ENTITY: 6
+	- INFRASTRUCTURE_SERVICE: 3
+	- REPOSITORY: 2
+	- VALUE_OBJECT: 38
+
+- # Features per bounded context
+	- policyManagement
+		- AGGREGATE: 2
+		- DOMAIN_EVENT: 7
+		- ENTITY: 6
+		- INFRASTRUCTURE_SERVICE: 3
+		- REPOSITORY: 2
+		- VALUE_OBJECT: 38
+
+- # Features per complex type kind
+	- ENUMERATION
+		- VALUE_OBJECT: 1
+	- STRUCTURE
+		- AGGREGATE: 2
+		- DOMAIN_EVENT: 7
+		- ENTITY: 6
+		- INFRASTRUCTURE_SERVICE: 3
+		- REPOSITORY: 2
+		- VALUE_OBJECT: 37
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 3: Service Model Information for Microservice customerCore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Service Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Service Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 3
+- # Operations: 17
+- # Purely Asynchronous Operations: 0
+- # Purely Synchronous Operations: 17
+
+- Largest Interface
+	- Name: customerInformationHolder
+	- Model File: customerCore.xmi
+	- # Operations: 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Protocol Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Effective Protocols
+	- Asynchronous
+		- # Asynchronous Protocols: 0
+	- Synchronous
+		- rest/application/json
+		- soap/application/xml
+		- # Synchronous Protocols: 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REST Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # REST operations: 9
+	- # ... Non-internal REST operations with HTTP method: 6
+	- # ... REST operations with HTTP method and explicit REST endpoint: 4
+		- HTTP method distribution:
+				- GET: 2
+				- PUT: 2
+	- # ... REST operations with explicit REST endpoint but WITHOUT HTTP method: 0
+	- # ... REST operations WITHOUT HTTP method and explicit REST endpoint: 3
+		- internal com.lakesidemutual.customercore.CustomerCore.customerInformationHolder.getIncludedFields
+		- internal com.lakesidemutual.customercore.CustomerCore.customerInformationHolder.createCustomerResponseDto
+		- internal com.lakesidemutual.customercore.CustomerCore.customerInformationHolder.createPaginatedCustomerResponseDto
+	- ... Overall HTTP method distribution:
+			- GET: 3
+			- POST: 1
+			- PUT: 2
+********************************************************************************
+Athanasopoulos et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerCore.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- microservice com.lakesidemutual.customercore.CustomerCore
+	- interface cityStaticDataHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface customerInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.42807140775890773
+					- Greatest similarity between createPaginatedCustomerResponseDto and createCustomer: 0.8531746031746033
+					- Lowest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 0.26666666666666666
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getIncludedFields: 1.0
+					- Greatest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and updateCustomer: 1.0
+					- Greatest similarity between changeAddress and getCustomers: 1.0
+					- Greatest similarity between changeAddress and createCustomer: 1.0
+					- Greatest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and getCustomer: 1.0
+					- Greatest similarity between getIncludedFields and updateCustomer: 1.0
+					- Greatest similarity between getIncludedFields and getCustomers: 1.0
+					- Greatest similarity between getIncludedFields and createCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and getCustomers: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and getCustomers: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Greatest similarity between getCustomers and createCustomer: 1.0
+					- Lowest similarity between changeAddress and getIncludedFields: 1.0
+					- Lowest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and updateCustomer: 1.0
+					- Lowest similarity between changeAddress and getCustomers: 1.0
+					- Lowest similarity between changeAddress and createCustomer: 1.0
+					- Lowest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and getCustomer: 1.0
+					- Lowest similarity between getIncludedFields and updateCustomer: 1.0
+					- Lowest similarity between getIncludedFields and getCustomers: 1.0
+					- Lowest similarity between getIncludedFields and createCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and getCustomers: 1.0
+					- Lowest similarity between getCustomer and createCustomer: 1.0
+					- Lowest similarity between updateCustomer and getCustomers: 1.0
+					- Lowest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between getCustomers and createCustomer: 1.0
+		- Domain-Level Cohesion Lack: 0.8035714285714286
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 0.25
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 0.25
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 0.25
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.8388304331056432
+					- Greatest similarity between updateCustomer and createCustomer: 0.6571428571428571
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 0.041666666666666664
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getIncludedFields: 1.0
+					- Greatest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and updateCustomer: 1.0
+					- Greatest similarity between changeAddress and getCustomers: 1.0
+					- Greatest similarity between changeAddress and createCustomer: 1.0
+					- Greatest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and getCustomer: 1.0
+					- Greatest similarity between getIncludedFields and updateCustomer: 1.0
+					- Greatest similarity between getIncludedFields and getCustomers: 1.0
+					- Greatest similarity between getIncludedFields and createCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and getCustomers: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and getCustomers: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Greatest similarity between getCustomers and createCustomer: 1.0
+					- Lowest similarity between changeAddress and getIncludedFields: 1.0
+					- Lowest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and updateCustomer: 1.0
+					- Lowest similarity between changeAddress and getCustomers: 1.0
+					- Lowest similarity between changeAddress and createCustomer: 1.0
+					- Lowest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and getCustomer: 1.0
+					- Lowest similarity between getIncludedFields and updateCustomer: 1.0
+					- Lowest similarity between getIncludedFields and getCustomers: 1.0
+					- Lowest similarity between getIncludedFields and createCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and getCustomers: 1.0
+					- Lowest similarity between getCustomer and createCustomer: 1.0
+					- Lowest similarity between updateCustomer and getCustomers: 1.0
+					- Lowest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between getCustomers and createCustomer: 1.0
+	- interface customerInformationHolderSOAPAdapter
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.4238074673342531
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 0.8888888888888888
+					- Lowest similarity between getCustomer and getCustomers: 0.23809523809523808
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getIncludedFields: 1.0
+					- Greatest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and updateCustomer: 1.0
+					- Greatest similarity between changeAddress and getCustomers: 1.0
+					- Greatest similarity between changeAddress and createCustomer: 1.0
+					- Greatest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and getCustomer: 1.0
+					- Greatest similarity between getIncludedFields and updateCustomer: 1.0
+					- Greatest similarity between getIncludedFields and getCustomers: 1.0
+					- Greatest similarity between getIncludedFields and createCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and getCustomers: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and getCustomers: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Greatest similarity between getCustomers and createCustomer: 1.0
+					- Lowest similarity between changeAddress and getIncludedFields: 1.0
+					- Lowest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and updateCustomer: 1.0
+					- Lowest similarity between changeAddress and getCustomers: 1.0
+					- Lowest similarity between changeAddress and createCustomer: 1.0
+					- Lowest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and getCustomer: 1.0
+					- Lowest similarity between getIncludedFields and updateCustomer: 1.0
+					- Lowest similarity between getIncludedFields and getCustomers: 1.0
+					- Lowest similarity between getIncludedFields and createCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and getCustomers: 1.0
+					- Lowest similarity between getCustomer and createCustomer: 1.0
+					- Lowest similarity between updateCustomer and getCustomers: 1.0
+					- Lowest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between getCustomers and createCustomer: 1.0
+		- Domain-Level Cohesion Lack: 0.8035714285714286
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 0.25
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 0.25
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 0.25
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.8456891993394093
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomers: 0.7692307692307692
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 0.041666666666666664
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getIncludedFields: 1.0
+					- Greatest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and updateCustomer: 1.0
+					- Greatest similarity between changeAddress and getCustomers: 1.0
+					- Greatest similarity between changeAddress and createCustomer: 1.0
+					- Greatest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getIncludedFields and getCustomer: 1.0
+					- Greatest similarity between getIncludedFields and updateCustomer: 1.0
+					- Greatest similarity between getIncludedFields and getCustomers: 1.0
+					- Greatest similarity between getIncludedFields and createCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and getCustomers: 1.0
+					- Greatest similarity between getCustomer and createCustomer: 1.0
+					- Greatest similarity between updateCustomer and getCustomers: 1.0
+					- Greatest similarity between updateCustomer and createCustomer: 1.0
+					- Greatest similarity between getCustomers and createCustomer: 1.0
+					- Lowest similarity between changeAddress and getIncludedFields: 1.0
+					- Lowest similarity between changeAddress and createCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and updateCustomer: 1.0
+					- Lowest similarity between changeAddress and getCustomers: 1.0
+					- Lowest similarity between changeAddress and createCustomer: 1.0
+					- Lowest similarity between getIncludedFields and createCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getIncludedFields and getCustomer: 1.0
+					- Lowest similarity between getIncludedFields and updateCustomer: 1.0
+					- Lowest similarity between getIncludedFields and getCustomers: 1.0
+					- Lowest similarity between getIncludedFields and createCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and updateCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomers: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and getCustomers: 1.0
+					- Lowest similarity between getCustomer and createCustomer: 1.0
+					- Lowest similarity between updateCustomer and getCustomers: 1.0
+					- Lowest similarity between updateCustomer and createCustomer: 1.0
+					- Lowest similarity between getCustomers and createCustomer: 1.0
+********************************************************************************
+Engel et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 3
+- Average interfaces per microservice: 3.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerCore.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customercore.CustomerCore
+	- Metric M1: Interface Count
+		- # Interfaces: 3
+		- # Synchronous interfaces: 3
+		- # Asynchronous interfaces: 0
+
+	- Metric M3: (Statically Determinable) Dependencies Count
+		- # Dependencies: 0
+
+	- Metric M5: (Statically Determinable) Average Interaction Size (Original Types for Size Calculation)
+		- Microservice: com.lakesidemutual.customercore.CustomerCore
+			- Asynchronous Interaction Sizes
+
+				- Operation with highest input size: NOT DETERMINABLE
+						- Size: -1 bits (# parameters: -1)
+				- Operation with highest output size: NOT DETERMINABLE
+						- Size: -1 bits (# parameters: -1)
+				- Overall interaction size: 0 bits (# parameters: 0)
+						- Overall input size: 0 bits (# parameters: 0)
+						- Overall output size: 0 bits (# parameters: 0)
+				- Average interaction size: NaN bits (# operations: 0)
+						- Average input size: NaN bits
+						- Average output size: NaN bits
+
+			- Synchronous Interaction Sizes
+				- Operation cityStaticDataHolder.getCitiesForPostalCode:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation customerInformationHolder.changeAddress:
+						- Input size: 256 bits (# parameters: 2)
+						- Output size: 256 bits (# parameters: 2)
+				- Operation customerInformationHolder.getIncludedFields:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation customerInformationHolder.createCustomerResponseDto:
+						- Input size: 960 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 1)
+				- Operation customerInformationHolder.createPaginatedCustomerResponseDto:
+						- Input size: 1056 bits (# parameters: 6)
+						- Output size: 992 bits (# parameters: 1)
+				- Operation customerInformationHolder.getCustomer:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 1)
+				- Operation customerInformationHolder.updateCustomer:
+						- Input size: 576 bits (# parameters: 2)
+						- Output size: 896 bits (# parameters: 2)
+				- Operation customerInformationHolder.getCustomers:
+						- Input size: 192 bits (# parameters: 4)
+						- Output size: 992 bits (# parameters: 1)
+				- Operation customerInformationHolder.createCustomer:
+						- Input size: 512 bits (# parameters: 1)
+						- Output size: 832 bits (# parameters: 1)
+				- Operation customerInformationHolderSOAPAdapter.changeAddress:
+						- Input size: 256 bits (# parameters: 2)
+						- Output size: 256 bits (# parameters: 2)
+				- Operation customerInformationHolderSOAPAdapter.getIncludedFields:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation customerInformationHolderSOAPAdapter.createCustomerResponseDto:
+						- Input size: 960 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 1)
+				- Operation customerInformationHolderSOAPAdapter.createPaginatedCustomerResponseDto:
+						- Input size: 1056 bits (# parameters: 6)
+						- Output size: 992 bits (# parameters: 1)
+				- Operation customerInformationHolderSOAPAdapter.getCustomer:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation customerInformationHolderSOAPAdapter.updateCustomer:
+						- Input size: 576 bits (# parameters: 2)
+						- Output size: 896 bits (# parameters: 2)
+				- Operation customerInformationHolderSOAPAdapter.getCustomers:
+						- Input size: 192 bits (# parameters: 4)
+						- Output size: 992 bits (# parameters: 1)
+				- Operation customerInformationHolderSOAPAdapter.createCustomer:
+						- Input size: 512 bits (# parameters: 1)
+						- Output size: 832 bits (# parameters: 1)
+
+				- Operation with highest input size: customerInformationHolder.createPaginatedCustomerResponseDto
+						- Size: 1056 bits (# parameters: 6)
+				- Operation with highest output size: customerInformationHolder.createPaginatedCustomerResponseDto
+						- Size: 992 bits (# parameters: 1)
+				- Overall interaction size: 18112 bits (# parameters: 60)
+						- Overall input size: 7488 bits (# parameters: 40)
+						- Overall output size: 10624 bits (# parameters: 20)
+				- Average interaction size: 1065.4117647058824 bits (# operations: 17)
+						- Average input size: 440.47058823529414 bits
+						- Average output size: 624.9411764705883 bits
+
+	- Metric M6: (Statically Determinable) Cyclic Dependencies Count
+		- # Cyclic Dependencies: 0
+********************************************************************************
+Haupt et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerCore.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Resources for microservice com.lakesidemutual.customercore.CustomerCore: 2
+- Resource Overview:
+	- PUT (2):
+		- customerCore.CustomerProfileEntity
+		- customerCore.CustomerAggregateRoot
+	- POST (2):
+		- customerCore.CustomerProfileEntity
+		- customerCore.CustomerAggregateRoot
+
+- Resource Characterization:
+	- Root resources (count: 1): customerCore.CustomerAggregateRoot
+	- # Resource links: 1
+	- Longest resource path (depth: 2):
+			customerCore.CustomerAggregateRoot -> customerCore.CustomerProfileEntity
+********************************************************************************
+Hirzalla et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Metric NoS: Number of Services
+	- # Microservices: 1
+
+- Metric SS: Stateless Services
+	- Metric result (fraction of stateless services in stateless and stateful services): 0.0
+	- # Stateless services: 0
+	- # Stateful services: 1
+		- Services for model customerCore.xmi
+			- Stateless services:
+			- Stateful services:
+				- com.lakesidemutual.customercore.CustomerCore
+
+- Metric SCP: Service Composition Pattern
+	- Metric result: 0.0
+	- SCPs metric result (fraction of structurally composed services): 0.0
+	- SCPwf metric result (fraction of services composed at runtime via parameter initialization): 0.0
+	- # Atomic services: 1
+	- # Structurally composed services: 0
+	- # Services composed at runtime via parameter initialization: 0
+		- Services for model customerCore.xmi
+			- Atomic services:
+				- com.lakesidemutual.customercore.CustomerCore
+			- Structurally composed services:
+			- Services composed at runtime via parameter initialization:
+
+- Metric NOVS: Number of Versions per Service
+	- Metric result (average number of versions per microservice): 1.0
+		- Versions for model customerCore.xmi
+			- Microservice com.lakesidemutual.customercore.CustomerCore:
+				- No explicit version specified
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerCore.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customercore.CustomerCore
+	- Metric WSIC: Weighted Service Interface and Operation Count
+		- # Exposed interfaces (unweighted WSIC): 3.0
+		- # Exposed operations (unweighted WSIC): 11.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 3: Service Model Information for Microservice customerManagementBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Service Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Service Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 5
+- # Operations: 12
+- # Purely Asynchronous Operations: 3
+- # Purely Synchronous Operations: 8
+
+- Largest Interface
+	- Name: customerCoreClient
+	- Model File: customerManagementBackend.xmi
+	- # Operations: 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Protocol Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Effective Protocols
+	- Asynchronous
+		- # Asynchronous Protocols: 0
+	- Synchronous
+		- rest/application/json
+		- # Synchronous Protocols: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REST Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # REST operations: 12
+	- # ... Non-internal REST operations with HTTP method: 9
+	- # ... REST operations with HTTP method and explicit REST endpoint: 7
+		- HTTP method distribution:
+				- GET: 4
+				- PATCH: 1
+				- PUT: 2
+	- # ... REST operations with explicit REST endpoint but WITHOUT HTTP method: 0
+	- # ... REST operations WITHOUT HTTP method and explicit REST endpoint: 3
+		- internal com.lakesidemutual.customerManagementBackend.CustomerManagementBackend.interactionLogInformationHolder.broadcastNotifications
+		- public com.lakesidemutual.customerManagementBackend.CustomerManagementBackend.customerMessageController.processMessage
+		- internal com.lakesidemutual.customerManagementBackend.CustomerManagementBackend.customerMessageController.broadcastNotifications
+	- ... Overall HTTP method distribution:
+			- GET: 6
+			- PATCH: 1
+			- PUT: 2
+********************************************************************************
+Athanasopoulos et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- microservice com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+	- interface customerCoreClient
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.3817571317571318
+					- Greatest similarity between getCustomers and getCustomer: 0.6688311688311688
+					- Lowest similarity between getCustomer and updateCustomer: 0.5512820512820513
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+		- Domain-Level Cohesion Lack: 0.6666666666666667
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.713997113997114
+					- Greatest similarity between getCustomers and getCustomer: 0.47619047619047616
+					- Lowest similarity between getCustomer and updateCustomer: 0.18181818181818182
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+	- interface customerInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.3976495726495727
+					- Greatest similarity between getCustomers and getCustomer: 0.6474358974358975
+					- Lowest similarity between getCustomer and updateCustomer: 0.525
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+		- Domain-Level Cohesion Lack: 0.6666666666666667
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.7704124579124579
+					- Greatest similarity between getCustomer and updateCustomer: 0.4444444444444444
+					- Lowest similarity between getCustomers and getCustomer: 0.0625
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and updateCustomer: 1.0
+					- Greatest similarity between getCustomer and updateCustomer: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and updateCustomer: 1.0
+					- Lowest similarity between getCustomer and updateCustomer: 1.0
+	- interface interactionLogInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.18518518518518512
+					- Greatest similarity between getInteractionLog and broadcastNotifications: 1.0
+					- Greatest similarity between acknowledgeInteractions and broadcastNotifications: 1.0
+					- Lowest similarity between getInteractionLog and acknowledgeInteractions: 0.4444444444444444
+			- Asynchronous: 0.375
+					- Greatest similarity between getInteractionLog and acknowledgeInteractions: 0.625
+					- Greatest similarity between getInteractionLog and broadcastNotifications: 0.625
+					- Greatest similarity between acknowledgeInteractions and broadcastNotifications: 0.625
+					- Lowest similarity between getInteractionLog and acknowledgeInteractions: 0.625
+					- Lowest similarity between getInteractionLog and broadcastNotifications: 0.625
+					- Lowest similarity between acknowledgeInteractions and broadcastNotifications: 0.625
+		- Domain-Level Cohesion Lack: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.8539682539682539
+					- Greatest similarity between getInteractionLog and broadcastNotifications: 0.26666666666666666
+					- Lowest similarity between acknowledgeInteractions and broadcastNotifications: 0.17142857142857143
+			- Asynchronous: 0.44444444444444453
+					- Greatest similarity between acknowledgeInteractions and broadcastNotifications: 0.6666666666666666
+					- Lowest similarity between getInteractionLog and acknowledgeInteractions: 0.5
+					- Lowest similarity between getInteractionLog and broadcastNotifications: 0.5
+	- interface notificationInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface customerMessageController
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+					- Greatest similarity between processMessage and broadcastNotifications: 1.0
+					- Lowest similarity between processMessage and broadcastNotifications: 1.0
+			- Asynchronous: 0.25
+					- Greatest similarity between processMessage and broadcastNotifications: 0.75
+					- Lowest similarity between processMessage and broadcastNotifications: 0.75
+		- Domain-Level Cohesion Lack: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+					- Greatest similarity between processMessage and broadcastNotifications: 1.0
+					- Lowest similarity between processMessage and broadcastNotifications: 1.0
+			- Asynchronous: 0.7083333333333334
+					- Greatest similarity between processMessage and broadcastNotifications: 0.29166666666666663
+					- Lowest similarity between processMessage and broadcastNotifications: 0.29166666666666663
+********************************************************************************
+Engel et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 5
+- Average interfaces per microservice: 5.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+	- Metric M1: Interface Count
+		- # Interfaces: 5
+		- # Synchronous interfaces: 3
+		- # Asynchronous interfaces: 1
+
+	- Metric M3: (Statically Determinable) Dependencies Count
+		- # Dependencies: 1
+
+	- Metric M5: (Statically Determinable) Average Interaction Size (Original Types for Size Calculation)
+		- Microservice: com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+			- Asynchronous Interaction Sizes
+				- Operation interactionLogInformationHolder.acknowledgeInteractions:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 160 bits (# parameters: 1)
+				- Operation interactionLogInformationHolder.broadcastNotifications:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 160 bits (# parameters: 1)
+				- Operation customerMessageController.processMessage:
+						- Input size: 321 bits (# parameters: 1)
+						- Output size: 481 bits (# parameters: 2)
+				- Operation customerMessageController.broadcastNotifications:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 160 bits (# parameters: 1)
+
+				- Operation with highest input size: customerMessageController.processMessage
+						- Size: 321 bits (# parameters: 1)
+				- Operation with highest output size: customerMessageController.processMessage
+						- Size: 481 bits (# parameters: 2)
+				- Overall interaction size: 1282 bits (# parameters: 6)
+						- Overall input size: 321 bits (# parameters: 1)
+						- Overall output size: 961 bits (# parameters: 5)
+				- Average interaction size: 320.5 bits (# operations: 4)
+						- Average input size: 80.25 bits
+						- Average output size: 240.25 bits
+
+			- Synchronous Interaction Sizes
+				- Operation customerCoreClient.getCustomers:
+						- Input size: 128 bits (# parameters: 3)
+						- Output size: 992 bits (# parameters: 2)
+				- Operation customerCoreClient.getCustomer:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 832 bits (# parameters: 2)
+				- Operation customerCoreClient.updateCustomer:
+						- Input size: 768 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 2)
+				- Operation customerInformationHolder.getCustomers:
+						- Input size: 128 bits (# parameters: 3)
+						- Output size: 992 bits (# parameters: 2)
+				- Operation customerInformationHolder.getCustomer:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 896 bits (# parameters: 3)
+				- Operation customerInformationHolder.updateCustomer:
+						- Input size: 768 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 2)
+				- Operation interactionLogInformationHolder.getInteractionLog:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 385 bits (# parameters: 1)
+				- Operation interactionLogInformationHolder.acknowledgeInteractions:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 449 bits (# parameters: 2)
+				- Operation notificationInformationHolder.getNotifications:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 160 bits (# parameters: 1)
+
+				- Operation with highest input size: customerCoreClient.updateCustomer
+						- Size: 768 bits (# parameters: 2)
+				- Operation with highest output size: customerCoreClient.getCustomers
+						- Size: 992 bits (# parameters: 2)
+				- Overall interaction size: 8482 bits (# parameters: 32)
+						- Overall input size: 2112 bits (# parameters: 15)
+						- Overall output size: 6370 bits (# parameters: 17)
+				- Average interaction size: 942.4444444444445 bits (# operations: 9)
+						- Average input size: 234.66666666666666 bits
+						- Average output size: 707.7777777777778 bits
+
+	- Metric M6: (Statically Determinable) Cyclic Dependencies Count
+		- # Cyclic Dependencies: 0
+********************************************************************************
+Haupt et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Resources for microservice com.lakesidemutual.customerManagementBackend.CustomerManagementBackend: 2
+- Resource Overview:
+	- PATCH (2):
+		- customerManagementBackend.InteractionEntity
+		- customerManagementBackend.InteractionLogAggregateRoot
+
+- Resource Characterization:
+	- Root resources (count: 2): customerManagementBackend.InteractionEntity, customerManagementBackend.InteractionLogAggregateRoot
+	- # Resource links: 0
+	- Longest resource path (depth: 1):
+			customerManagementBackend.InteractionEntity
+********************************************************************************
+Hirzalla et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Metric NoS: Number of Services
+	- # Microservices: 1
+
+- Metric SS: Stateless Services
+	- Metric result (fraction of stateless services in stateless and stateful services): 0.0
+	- # Stateless services: 0
+	- # Stateful services: 1
+		- Services for model customerManagementBackend.xmi
+			- Stateless services:
+			- Stateful services:
+				- com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+
+- Metric SCP: Service Composition Pattern
+	- Metric result: 1.0
+	- SCPs metric result (fraction of structurally composed services): 1.0
+	- SCPwf metric result (fraction of services composed at runtime via parameter initialization): NaN
+	- # Atomic services: 0
+	- # Structurally composed services: 1
+	- # Services composed at runtime via parameter initialization: 0
+		- Services for model customerManagementBackend.xmi
+			- Atomic services:
+			- Structurally composed services:
+				- com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+			- Services composed at runtime via parameter initialization:
+
+- Metric NOVS: Number of Versions per Service
+	- Metric result (average number of versions per microservice): 1.0
+		- Versions for model customerManagementBackend.xmi
+			- Microservice com.lakesidemutual.customerManagementBackend.CustomerManagementBackend:
+				- No explicit version specified
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customerManagementBackend.CustomerManagementBackend
+	- Metric WSIC: Weighted Service Interface and Operation Count
+		- # Exposed interfaces (unweighted WSIC): 5.0
+		- # Exposed operations (unweighted WSIC): 10.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 3: Service Model Information for Microservice customerSelfServiceBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Service Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Service Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 8
+- # Operations: 16
+- # Purely Asynchronous Operations: 3
+- # Purely Synchronous Operations: 11
+
+- Largest Interface
+	- Name: customerInformationHolder
+	- Model File: customerSelfServiceBackend.xmi
+	- # Operations: 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Protocol Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Effective Protocols
+	- Asynchronous
+		- amqp/application/json
+		- # Asynchronous Protocols: 1
+	- Synchronous
+		- rest/application/json
+		- # Synchronous Protocols: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REST Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # REST operations: 16
+	- # ... Non-internal REST operations with HTTP method: 12
+	- # ... REST operations with HTTP method and explicit REST endpoint: 7
+		- HTTP method distribution:
+				- GET: 4
+				- PATCH: 1
+				- POST: 1
+				- PUT: 1
+	- # ... REST operations with explicit REST endpoint but WITHOUT HTTP method: 0
+	- # ... REST operations WITHOUT HTTP method and explicit REST endpoint: 1
+		- internal com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend.customerInformationHolder.addHATEOASLinks
+	- ... Overall HTTP method distribution:
+			- GET: 6
+			- PATCH: 1
+			- POST: 4
+			- PUT: 1
+********************************************************************************
+Athanasopoulos et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerSelfServiceBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- microservice com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+	- interface authenticationController
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.4285714285714286
+					- Greatest similarity between authenticationRequest and signupUser: 0.5714285714285714
+					- Lowest similarity between authenticationRequest and signupUser: 0.5714285714285714
+			- Asynchronous: 0.0
+					- Greatest similarity between authenticationRequest and signupUser: 1.0
+					- Lowest similarity between authenticationRequest and signupUser: 1.0
+		- Domain-Level Cohesion Lack: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.775
+					- Greatest similarity between authenticationRequest and signupUser: 0.225
+					- Lowest similarity between authenticationRequest and signupUser: 0.225
+			- Asynchronous: 0.0
+					- Greatest similarity between authenticationRequest and signupUser: 1.0
+					- Lowest similarity between authenticationRequest and signupUser: 1.0
+	- interface cityStaticDataHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface customerInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.31200937950937957
+					- Greatest similarity between getCustomer and addHATEOASLinks: 0.95
+					- Lowest similarity between changeAddress and getCustomer: 0.5208333333333334
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and registerCustomer: 1.0
+					- Greatest similarity between changeAddress and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between changeAddress and addHATEOASLinks: 1.0
+					- Greatest similarity between getCustomer and registerCustomer: 1.0
+					- Greatest similarity between getCustomer and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between getCustomer and addHATEOASLinks: 1.0
+					- Greatest similarity between registerCustomer and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between registerCustomer and addHATEOASLinks: 1.0
+					- Greatest similarity between getInsuranceQuoteRequests and addHATEOASLinks: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and registerCustomer: 1.0
+					- Lowest similarity between changeAddress and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between changeAddress and addHATEOASLinks: 1.0
+					- Lowest similarity between getCustomer and registerCustomer: 1.0
+					- Lowest similarity between getCustomer and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between getCustomer and addHATEOASLinks: 1.0
+					- Lowest similarity between registerCustomer and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between registerCustomer and addHATEOASLinks: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and addHATEOASLinks: 1.0
+		- Domain-Level Cohesion Lack: 0.9
+					- Greatest similarity between getCustomer and registerCustomer: 1.0
+					- Lowest similarity between getCustomer and registerCustomer: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.8067045454545454
+					- Greatest similarity between getCustomer and registerCustomer: 0.6587301587301587
+					- Lowest similarity between getInsuranceQuoteRequests and addHATEOASLinks: 0.045454545454545456
+			- Asynchronous: 0.0
+					- Greatest similarity between changeAddress and getCustomer: 1.0
+					- Greatest similarity between changeAddress and registerCustomer: 1.0
+					- Greatest similarity between changeAddress and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between changeAddress and addHATEOASLinks: 1.0
+					- Greatest similarity between getCustomer and registerCustomer: 1.0
+					- Greatest similarity between getCustomer and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between getCustomer and addHATEOASLinks: 1.0
+					- Greatest similarity between registerCustomer and getInsuranceQuoteRequests: 1.0
+					- Greatest similarity between registerCustomer and addHATEOASLinks: 1.0
+					- Greatest similarity between getInsuranceQuoteRequests and addHATEOASLinks: 1.0
+					- Lowest similarity between changeAddress and getCustomer: 1.0
+					- Lowest similarity between changeAddress and registerCustomer: 1.0
+					- Lowest similarity between changeAddress and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between changeAddress and addHATEOASLinks: 1.0
+					- Lowest similarity between getCustomer and registerCustomer: 1.0
+					- Lowest similarity between getCustomer and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between getCustomer and addHATEOASLinks: 1.0
+					- Lowest similarity between registerCustomer and getInsuranceQuoteRequests: 1.0
+					- Lowest similarity between registerCustomer and addHATEOASLinks: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and addHATEOASLinks: 1.0
+	- interface userInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface insuranceQuoteExpiredMessageConsumer
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface insuranceQuoteRequestInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.4736028065072183
+					- Greatest similarity between createInsuranceQuoteRequest and respondToInsuranceQuote: 0.775
+					- Lowest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 0.40512820512820513
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuote: 0.40512820512820513
+			- Asynchronous: 0.31818181818181823
+					- Greatest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and createInsuranceQuoteRequest: 0.5454545454545454
+					- Lowest similarity between getInsuranceQuoteRequest and createInsuranceQuoteRequest: 0.5454545454545454
+		- Domain-Level Cohesion Lack: 0.41666666666666663
+					- Greatest similarity between getInsuranceQuoteRequest and createInsuranceQuoteRequest: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 0.5
+					- Lowest similarity between getInsuranceQuoteRequests and createInsuranceQuoteRequest: 0.5
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuote: 0.5
+					- Lowest similarity between getInsuranceQuoteRequest and respondToInsuranceQuote: 0.5
+					- Lowest similarity between createInsuranceQuoteRequest and respondToInsuranceQuote: 0.5
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.8345352564102564
+					- Greatest similarity between getInsuranceQuoteRequest and respondToInsuranceQuote: 0.5
+					- Lowest similarity between createInsuranceQuoteRequest and respondToInsuranceQuote: 0.03125
+			- Asynchronous: 0.41025641025641024
+					- Greatest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and createInsuranceQuoteRequest: 0.5
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuote: 0.5
+					- Lowest similarity between getInsuranceQuoteRequest and createInsuranceQuoteRequest: 0.5
+					- Lowest similarity between getInsuranceQuoteRequest and respondToInsuranceQuote: 0.5
+	- interface insuranceQuoteResponseMessageConsumer
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface policyCreatedMessageConsumer
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+********************************************************************************
+Engel et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 8
+- Average interfaces per microservice: 8.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerSelfServiceBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+	- Metric M1: Interface Count
+		- # Interfaces: 8
+		- # Synchronous interfaces: 4
+		- # Asynchronous interfaces: 3
+
+	- Metric M3: (Statically Determinable) Dependencies Count
+		- # Dependencies: 2
+
+	- Metric M5: (Statically Determinable) Average Interaction Size (Original Types for Size Calculation)
+		- Microservice: com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+			- Asynchronous Interaction Sizes
+				- Operation insuranceQuoteExpiredMessageConsumer.receiveInsuranceQuoteExpiredEvent:
+						- Input size: 128 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation insuranceQuoteRequestInformationHolder.createInsuranceQuoteRequest:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 1536 bits (# parameters: 1)
+				- Operation insuranceQuoteRequestInformationHolder.respondToInsuranceQuote:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 129 bits (# parameters: 1)
+				- Operation insuranceQuoteResponseMessageConsumer.receiveInsuranceQuoteResponse:
+						- Input size: 449 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation policyCreatedMessageConsumer.receivePolicyCreatedEvent:
+						- Input size: 449 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+
+				- Operation with highest input size: insuranceQuoteResponseMessageConsumer.receiveInsuranceQuoteResponse
+						- Size: 449 bits (# parameters: 1)
+				- Operation with highest output size: insuranceQuoteRequestInformationHolder.createInsuranceQuoteRequest
+						- Size: 1536 bits (# parameters: 1)
+				- Overall interaction size: 2691 bits (# parameters: 5)
+						- Overall input size: 1026 bits (# parameters: 3)
+						- Overall output size: 1665 bits (# parameters: 2)
+				- Average interaction size: 538.2 bits (# operations: 5)
+						- Average input size: 205.2 bits
+						- Average output size: 333.0 bits
+
+			- Synchronous Interaction Sizes
+				- Operation authenticationController.authenticationRequest:
+						- Input size: 128 bits (# parameters: 1)
+						- Output size: 192 bits (# parameters: 2)
+				- Operation authenticationController.signupUser:
+						- Input size: 128 bits (# parameters: 1)
+						- Output size: 192 bits (# parameters: 2)
+				- Operation cityStaticDataHolder.getCitiesForPostalCode:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 128 bits (# parameters: 2)
+				- Operation customerInformationHolder.changeAddress:
+						- Input size: 256 bits (# parameters: 2)
+						- Output size: 256 bits (# parameters: 2)
+				- Operation customerInformationHolder.getCustomer:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 896 bits (# parameters: 3)
+				- Operation customerInformationHolder.registerCustomer:
+						- Input size: 512 bits (# parameters: 2)
+						- Output size: 832 bits (# parameters: 2)
+				- Operation customerInformationHolder.getInsuranceQuoteRequests:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 1472 bits (# parameters: 1)
+				- Operation customerInformationHolder.addHATEOASLinks:
+						- Input size: 768 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation userInformationHolder.getCurrentUser:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 128 bits (# parameters: 1)
+				- Operation insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequests:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 1472 bits (# parameters: 1)
+				- Operation insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequest:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 1600 bits (# parameters: 3)
+				- Operation insuranceQuoteRequestInformationHolder.createInsuranceQuoteRequest:
+						- Input size: 1536 bits (# parameters: 2)
+						- Output size: 1536 bits (# parameters: 2)
+				- Operation insuranceQuoteRequestInformationHolder.respondToInsuranceQuote:
+						- Input size: 448 bits (# parameters: 2)
+						- Output size: 1600 bits (# parameters: 3)
+
+				- Operation with highest input size: insuranceQuoteRequestInformationHolder.createInsuranceQuoteRequest
+						- Size: 1536 bits (# parameters: 2)
+				- Operation with highest output size: insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequest
+						- Size: 1600 bits (# parameters: 3)
+				- Overall interaction size: 14528 bits (# parameters: 42)
+						- Overall input size: 4224 bits (# parameters: 18)
+						- Overall output size: 10304 bits (# parameters: 24)
+				- Average interaction size: 1117.5384615384614 bits (# operations: 13)
+						- Average input size: 324.9230769230769 bits
+						- Average output size: 792.6153846153846 bits
+
+	- Metric M6: (Statically Determinable) Cyclic Dependencies Count
+		- # Cyclic Dependencies: 0
+********************************************************************************
+Haupt et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerSelfServiceBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Resources for microservice com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend: 4
+- Resource Overview:
+	- PUT (1):
+		- customerSelfService.CustomerInfoEntity
+	- GET (1):
+		- customerSelfService.CustomerInfoEntity
+	- POST (4):
+		- customerSelfService.CustomerInfoEntity
+		- customerSelfService.InsuranceQuoteRequestAggregateRoot
+		- customerSelfService.InsuranceQuoteEntity
+		- customerSelfService.InsuranceOptionsEntity
+	- PATCH (3):
+		- customerSelfService.InsuranceQuoteEntity
+		- customerSelfService.InsuranceQuoteRequestAggregateRoot
+		- customerSelfService.InsuranceOptionsEntity
+
+- Resource Characterization:
+	- Root resources (count: 1): customerSelfService.InsuranceQuoteRequestAggregateRoot
+	- # Resource links: 3
+	- Longest resource path (depth: 2):
+			customerSelfService.InsuranceQuoteRequestAggregateRoot -> customerSelfService.CustomerInfoEntity
+********************************************************************************
+Hirzalla et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Metric NoS: Number of Services
+	- # Microservices: 1
+
+- Metric SS: Stateless Services
+	- Metric result (fraction of stateless services in stateless and stateful services): 0.0
+	- # Stateless services: 0
+	- # Stateful services: 1
+		- Services for model customerSelfServiceBackend.xmi
+			- Stateless services:
+			- Stateful services:
+				- com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+
+- Metric SCP: Service Composition Pattern
+	- Metric result: 1.0
+	- SCPs metric result (fraction of structurally composed services): 1.0
+	- SCPwf metric result (fraction of services composed at runtime via parameter initialization): NaN
+	- # Atomic services: 0
+	- # Structurally composed services: 1
+	- # Services composed at runtime via parameter initialization: 0
+		- Services for model customerSelfServiceBackend.xmi
+			- Atomic services:
+			- Structurally composed services:
+				- com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+			- Services composed at runtime via parameter initialization:
+
+- Metric NOVS: Number of Versions per Service
+	- Metric result (average number of versions per microservice): 1.0
+		- Versions for model customerSelfServiceBackend.xmi
+			- Microservice com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend:
+				- No explicit version specified
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/customerSelfServiceBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.customerselfservice.CustomerSelfServiceBackend
+	- Metric WSIC: Weighted Service Interface and Operation Count
+		- # Exposed interfaces (unweighted WSIC): 8.0
+		- # Exposed operations (unweighted WSIC): 15.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SAR Activity 3: Service Model Information for Microservice policyManagementBackend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************************************************
+Service Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of Service Models (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 6
+- # Operations: 24
+- # Purely Asynchronous Operations: 1
+- # Purely Synchronous Operations: 18
+
+- Largest Interface
+	- Name: policyInformationHolder
+	- Model File: policyManagementBackend.xmi
+	- # Operations: 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Protocol Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Effective Protocols
+	- Asynchronous
+		- amqp/application/json
+		- # Asynchronous Protocols: 1
+	- Synchronous
+		- rest/application/json
+		- # Synchronous Protocols: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REST Overview (Model Count: 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # REST operations: 24
+	- # ... Non-internal REST operations with HTTP method: 12
+	- # ... REST operations with HTTP method and explicit REST endpoint: 8
+		- HTTP method distribution:
+				- DELETE: 1
+				- GET: 4
+				- PATCH: 1
+				- POST: 1
+				- PUT: 1
+	- # ... REST operations with explicit REST endpoint but WITHOUT HTTP method: 0
+	- # ... REST operations WITHOUT HTTP method and explicit REST endpoint: 10
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.customerInformationHolder.createPaginatedCustomerResponseDto
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.customerInformationHolder.addCustomerLinks
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.customerInformationHolder.createPolicyDto
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.policyInformationHolder.createPolicyDtos
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.policyInformationHolder.createPaginatedPolicyResponseDto
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.riskComputationService.getAge
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.riskComputationService.computeRiskFactorInternal
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.riskComputationService.computeAgeGroupRiskFactor
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.riskComputationService.computeLocalityRiskFactor
+		- internal com.lakesidemutual.policymanagement.PolicyManagementBackend.customerDecisionMessageConsumer.createPolicyForInsuranceQuoteRequest
+	- ... Overall HTTP method distribution:
+			- DELETE: 1
+			- GET: 7
+			- PATCH: 1
+			- POST: 2
+			- PUT: 1
+********************************************************************************
+Athanasopoulos et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/policyManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- microservice com.lakesidemutual.policymanagement.PolicyManagementBackend
+	- interface customerInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.4533000461932687
+					- Greatest similarity between getCustomers and addCustomerLinks: 0.9545454545454546
+					- Lowest similarity between addCustomerLinks and createPolicyDto: 0.2149321266968326
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getCustomers and addCustomerLinks: 1.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and getPolicies: 1.0
+					- Greatest similarity between getCustomers and createPolicyDto: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and addCustomerLinks: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getPolicies: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createPolicyDto: 1.0
+					- Greatest similarity between addCustomerLinks and getCustomer: 1.0
+					- Greatest similarity between addCustomerLinks and getPolicies: 1.0
+					- Greatest similarity between addCustomerLinks and createPolicyDto: 1.0
+					- Greatest similarity between getCustomer and getPolicies: 1.0
+					- Greatest similarity between getCustomer and createPolicyDto: 1.0
+					- Greatest similarity between getPolicies and createPolicyDto: 1.0
+					- Lowest similarity between getCustomers and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getCustomers and addCustomerLinks: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and getPolicies: 1.0
+					- Lowest similarity between getCustomers and createPolicyDto: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and addCustomerLinks: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getPolicies: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createPolicyDto: 1.0
+					- Lowest similarity between addCustomerLinks and getCustomer: 1.0
+					- Lowest similarity between addCustomerLinks and getPolicies: 1.0
+					- Lowest similarity between addCustomerLinks and createPolicyDto: 1.0
+					- Lowest similarity between getCustomer and getPolicies: 1.0
+					- Lowest similarity between getCustomer and createPolicyDto: 1.0
+					- Lowest similarity between getPolicies and createPolicyDto: 1.0
+		- Domain-Level Cohesion Lack: 0.9233333333333333
+					- Greatest similarity between addCustomerLinks and getCustomer: 0.5
+					- Lowest similarity between createPaginatedCustomerResponseDto and addCustomerLinks: 0.2
+					- Lowest similarity between createPaginatedCustomerResponseDto and createPolicyDto: 0.2
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.9396344396344396
+					- Greatest similarity between getCustomers and createPaginatedCustomerResponseDto: 0.3181818181818182
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 0.03333333333333333
+			- Asynchronous: 0.0
+					- Greatest similarity between getCustomers and createPaginatedCustomerResponseDto: 1.0
+					- Greatest similarity between getCustomers and addCustomerLinks: 1.0
+					- Greatest similarity between getCustomers and getCustomer: 1.0
+					- Greatest similarity between getCustomers and getPolicies: 1.0
+					- Greatest similarity between getCustomers and createPolicyDto: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and addCustomerLinks: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and getPolicies: 1.0
+					- Greatest similarity between createPaginatedCustomerResponseDto and createPolicyDto: 1.0
+					- Greatest similarity between addCustomerLinks and getCustomer: 1.0
+					- Greatest similarity between addCustomerLinks and getPolicies: 1.0
+					- Greatest similarity between addCustomerLinks and createPolicyDto: 1.0
+					- Greatest similarity between getCustomer and getPolicies: 1.0
+					- Greatest similarity between getCustomer and createPolicyDto: 1.0
+					- Greatest similarity between getPolicies and createPolicyDto: 1.0
+					- Lowest similarity between getCustomers and createPaginatedCustomerResponseDto: 1.0
+					- Lowest similarity between getCustomers and addCustomerLinks: 1.0
+					- Lowest similarity between getCustomers and getCustomer: 1.0
+					- Lowest similarity between getCustomers and getPolicies: 1.0
+					- Lowest similarity between getCustomers and createPolicyDto: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and addCustomerLinks: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getCustomer: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and getPolicies: 1.0
+					- Lowest similarity between createPaginatedCustomerResponseDto and createPolicyDto: 1.0
+					- Lowest similarity between addCustomerLinks and getCustomer: 1.0
+					- Lowest similarity between addCustomerLinks and getPolicies: 1.0
+					- Lowest similarity between addCustomerLinks and createPolicyDto: 1.0
+					- Lowest similarity between getCustomer and getPolicies: 1.0
+					- Lowest similarity between getCustomer and createPolicyDto: 1.0
+					- Lowest similarity between getPolicies and createPolicyDto: 1.0
+	- interface insuranceQuoteRequestInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.5482600732600733
+					- Greatest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.48214285714285715
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuoteRequest: 0.4083333333333333
+			- Asynchronous: 0.25
+					- Greatest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuoteRequest: 0.625
+					- Lowest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.625
+		- Domain-Level Cohesion Lack: 0.45000000000000007
+					- Greatest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.75
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuoteRequest: 0.4
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.858974358974359
+					- Greatest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.4230769230769231
+					- Lowest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.4230769230769231
+			- Asynchronous: 0.33333333333333337
+					- Greatest similarity between getInsuranceQuoteRequests and getInsuranceQuoteRequest: 1.0
+					- Lowest similarity between getInsuranceQuoteRequests and respondToInsuranceQuoteRequest: 0.5
+					- Lowest similarity between getInsuranceQuoteRequest and respondToInsuranceQuoteRequest: 0.5
+	- interface insuranceQuoteRequestMessageConsumer
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+		- Domain-Level Cohesion Lack: 0.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.0
+			- Asynchronous: 0.0
+	- interface policyInformationHolder
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.3601926259104371
+					- Greatest similarity between updatePolicy and deletePolicy: 0.8700980392156863
+					- Lowest similarity between deletePolicy and createPaginatedPolicyResponseDto: 0.23958333333333331
+			- Asynchronous: 0.053968253968254
+					- Greatest similarity between createPolicy and createPolicyDtos: 1.0
+					- Greatest similarity between createPolicy and createPaginatedPolicyResponseDto: 1.0
+					- Greatest similarity between createPolicy and getPolicies: 1.0
+					- Greatest similarity between createPolicy and getPolicy: 1.0
+					- Greatest similarity between updatePolicy and createPolicyDtos: 1.0
+					- Greatest similarity between updatePolicy and createPaginatedPolicyResponseDto: 1.0
+					- Greatest similarity between updatePolicy and getPolicies: 1.0
+					- Greatest similarity between updatePolicy and getPolicy: 1.0
+					- Greatest similarity between deletePolicy and createPolicyDtos: 1.0
+					- Greatest similarity between deletePolicy and createPaginatedPolicyResponseDto: 1.0
+					- Greatest similarity between deletePolicy and getPolicies: 1.0
+					- Greatest similarity between deletePolicy and getPolicy: 1.0
+					- Greatest similarity between createPolicyDtos and createPaginatedPolicyResponseDto: 1.0
+					- Greatest similarity between createPolicyDtos and getPolicies: 1.0
+					- Greatest similarity between createPolicyDtos and getPolicy: 1.0
+					- Greatest similarity between createPaginatedPolicyResponseDto and getPolicies: 1.0
+					- Greatest similarity between createPaginatedPolicyResponseDto and getPolicy: 1.0
+					- Greatest similarity between getPolicies and getPolicy: 1.0
+					- Lowest similarity between createPolicy and updatePolicy: 0.5333333333333333
+		- Domain-Level Cohesion Lack: 0.5619047619047619
+					- Greatest similarity between createPolicy and updatePolicy: 1.0
+					- Greatest similarity between createPolicy and deletePolicy: 1.0
+					- Greatest similarity between createPolicy and getPolicy: 1.0
+					- Greatest similarity between updatePolicy and deletePolicy: 1.0
+					- Greatest similarity between updatePolicy and getPolicy: 1.0
+					- Greatest similarity between deletePolicy and getPolicy: 1.0
+					- Lowest similarity between createPolicyDtos and createPaginatedPolicyResponseDto: 0.2
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.7766662449546129
+					- Greatest similarity between createPaginatedPolicyResponseDto and getPolicies: 0.5995475113122172
+					- Lowest similarity between createPolicyDtos and getPolicy: 0.0625
+			- Asynchronous: 0.2860877684407097
+					- Greatest similarity between createPolicy and updatePolicy: 1.0
+					- Greatest similarity between createPolicyDtos and createPaginatedPolicyResponseDto: 1.0
+					- Greatest similarity between createPolicyDtos and getPolicies: 1.0
+					- Greatest similarity between createPolicyDtos and getPolicy: 1.0
+					- Greatest similarity between createPaginatedPolicyResponseDto and getPolicies: 1.0
+					- Greatest similarity between createPaginatedPolicyResponseDto and getPolicy: 1.0
+					- Greatest similarity between getPolicies and getPolicy: 1.0
+					- Lowest similarity between createPolicy and deletePolicy: 0.5294117647058824
+					- Lowest similarity between updatePolicy and deletePolicy: 0.5294117647058824
+	- interface riskComputationService
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.35023809523809524
+					- Greatest similarity between getAge and computeAgeGroupRiskFactor: 0.8
+					- Lowest similarity between computeRiskFactor and computeRiskFactorInternal: 0.5142857142857142
+			- Asynchronous: 0.0
+					- Greatest similarity between computeRiskFactor and getAge: 1.0
+					- Greatest similarity between computeRiskFactor and computeRiskFactorInternal: 1.0
+					- Greatest similarity between computeRiskFactor and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactor and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between getAge and computeRiskFactorInternal: 1.0
+					- Greatest similarity between getAge and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between getAge and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactorInternal and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactorInternal and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between computeAgeGroupRiskFactor and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactor and getAge: 1.0
+					- Lowest similarity between computeRiskFactor and computeRiskFactorInternal: 1.0
+					- Lowest similarity between computeRiskFactor and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactor and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between getAge and computeRiskFactorInternal: 1.0
+					- Lowest similarity between getAge and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between getAge and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactorInternal and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactorInternal and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeAgeGroupRiskFactor and computeLocalityRiskFactor: 1.0
+		- Domain-Level Cohesion Lack: 0.6616666666666667
+					- Greatest similarity between computeRiskFactor and computeRiskFactorInternal: 0.6666666666666666
+					- Greatest similarity between computeRiskFactor and computeLocalityRiskFactor: 0.6666666666666666
+					- Lowest similarity between getAge and computeAgeGroupRiskFactor: 0.25
+		- Message-Level Cohesion Lack
+			- Synchronous: 0.6283333333333333
+					- Greatest similarity between computeRiskFactorInternal and computeAgeGroupRiskFactor: 0.8
+					- Lowest similarity between computeRiskFactor and computeRiskFactorInternal: 0.1
+			- Asynchronous: 0.0
+					- Greatest similarity between computeRiskFactor and getAge: 1.0
+					- Greatest similarity between computeRiskFactor and computeRiskFactorInternal: 1.0
+					- Greatest similarity between computeRiskFactor and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactor and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between getAge and computeRiskFactorInternal: 1.0
+					- Greatest similarity between getAge and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between getAge and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactorInternal and computeAgeGroupRiskFactor: 1.0
+					- Greatest similarity between computeRiskFactorInternal and computeLocalityRiskFactor: 1.0
+					- Greatest similarity between computeAgeGroupRiskFactor and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactor and getAge: 1.0
+					- Lowest similarity between computeRiskFactor and computeRiskFactorInternal: 1.0
+					- Lowest similarity between computeRiskFactor and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactor and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between getAge and computeRiskFactorInternal: 1.0
+					- Lowest similarity between getAge and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between getAge and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactorInternal and computeAgeGroupRiskFactor: 1.0
+					- Lowest similarity between computeRiskFactorInternal and computeLocalityRiskFactor: 1.0
+					- Lowest similarity between computeAgeGroupRiskFactor and computeLocalityRiskFactor: 1.0
+	- interface customerDecisionMessageConsumer
+		- Conversation-Level Cohesion Lack
+			- Synchronous: 0.6545454545454545
+					- Greatest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 0.34545454545454546
+					- Lowest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 0.34545454545454546
+			- Asynchronous: 0.0
+					- Greatest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 1.0
+					- Lowest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 1.0
+		- Domain-Level Cohesion Lack: 1.0
+		- Message-Level Cohesion Lack
+			- Synchronous: 1.0
+			- Asynchronous: 0.8070175438596492
+					- Greatest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 0.19298245614035087
+					- Lowest similarity between receiveCustomerDecision and createPolicyForInsuranceQuoteRequest: 0.19298245614035087
+********************************************************************************
+Engel et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Microservices: 1
+- # Interfaces: 6
+- Average interfaces per microservice: 6.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/policyManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.policymanagement.PolicyManagementBackend
+	- Metric M1: Interface Count
+		- # Interfaces: 6
+		- # Synchronous interfaces: 2
+		- # Asynchronous interfaces: 1
+
+	- Metric M3: (Statically Determinable) Dependencies Count
+		- # Dependencies: 1
+
+	- Metric M5: (Statically Determinable) Average Interaction Size (Original Types for Size Calculation)
+		- Microservice: com.lakesidemutual.policymanagement.PolicyManagementBackend
+			- Asynchronous Interaction Sizes
+				- Operation insuranceQuoteRequestInformationHolder.respondToInsuranceQuoteRequest:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 449 bits (# parameters: 1)
+				- Operation insuranceQuoteRequestMessageConsumer.receiveInsuranceQuoteRequest:
+						- Input size: 1536 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation policyInformationHolder.createPolicy:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 2048 bits (# parameters: 1)
+				- Operation policyInformationHolder.updatePolicy:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 2048 bits (# parameters: 1)
+				- Operation policyInformationHolder.deletePolicy:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 256 bits (# parameters: 1)
+				- Operation customerDecisionMessageConsumer.receiveCustomerDecision:
+						- Input size: 129 bits (# parameters: 1)
+						- Output size: 2368 bits (# parameters: 3)
+
+				- Operation with highest input size: insuranceQuoteRequestMessageConsumer.receiveInsuranceQuoteRequest
+						- Size: 1536 bits (# parameters: 1)
+				- Operation with highest output size: customerDecisionMessageConsumer.receiveCustomerDecision
+						- Size: 2368 bits (# parameters: 3)
+				- Overall interaction size: 8834 bits (# parameters: 9)
+						- Overall input size: 1665 bits (# parameters: 2)
+						- Overall output size: 7169 bits (# parameters: 7)
+				- Average interaction size: 1472.3333333333333 bits (# operations: 6)
+						- Average input size: 277.5 bits
+						- Average output size: 1194.8333333333333 bits
+
+			- Synchronous Interaction Sizes
+				- Operation customerInformationHolder.getCustomers:
+						- Input size: 128 bits (# parameters: 3)
+						- Output size: 992 bits (# parameters: 2)
+				- Operation customerInformationHolder.createPaginatedCustomerResponseDto:
+						- Input size: 928 bits (# parameters: 5)
+						- Output size: 928 bits (# parameters: 1)
+				- Operation customerInformationHolder.addCustomerLinks:
+						- Input size: 768 bits (# parameters: 1)
+						- Output size: 0 bits (# parameters: 0)
+				- Operation customerInformationHolder.getCustomer:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 896 bits (# parameters: 3)
+				- Operation customerInformationHolder.getPolicies:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 1088 bits (# parameters: 1)
+				- Operation customerInformationHolder.createPolicyDto:
+						- Input size: 1152 bits (# parameters: 2)
+						- Output size: 1152 bits (# parameters: 2)
+				- Operation insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequests:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 1472 bits (# parameters: 1)
+				- Operation insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequest:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 1536 bits (# parameters: 2)
+				- Operation insuranceQuoteRequestInformationHolder.respondToInsuranceQuoteRequest:
+						- Input size: 448 bits (# parameters: 2)
+						- Output size: 1536 bits (# parameters: 2)
+				- Operation policyInformationHolder.createPolicy:
+						- Input size: 768 bits (# parameters: 2)
+						- Output size: 1216 bits (# parameters: 3)
+				- Operation policyInformationHolder.updatePolicy:
+						- Input size: 832 bits (# parameters: 3)
+						- Output size: 1280 bits (# parameters: 4)
+				- Operation policyInformationHolder.deletePolicy:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation policyInformationHolder.createPolicyDtos:
+						- Input size: 2240 bits (# parameters: 3)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation policyInformationHolder.createPaginatedPolicyResponseDto:
+						- Input size: 1248 bits (# parameters: 5)
+						- Output size: 1184 bits (# parameters: 1)
+				- Operation policyInformationHolder.getPolicies:
+						- Input size: 128 bits (# parameters: 3)
+						- Output size: 1184 bits (# parameters: 1)
+				- Operation policyInformationHolder.getPolicy:
+						- Input size: 128 bits (# parameters: 2)
+						- Output size: 1152 bits (# parameters: 2)
+				- Operation riskComputationService.computeRiskFactor:
+						- Input size: 128 bits (# parameters: 1)
+						- Output size: 32 bits (# parameters: 1)
+				- Operation riskComputationService.getAge:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 32 bits (# parameters: 1)
+				- Operation riskComputationService.computeRiskFactorInternal:
+						- Input size: 96 bits (# parameters: 2)
+						- Output size: 32 bits (# parameters: 1)
+				- Operation riskComputationService.computeAgeGroupRiskFactor:
+						- Input size: 32 bits (# parameters: 1)
+						- Output size: 32 bits (# parameters: 1)
+				- Operation riskComputationService.computeLocalityRiskFactor:
+						- Input size: 64 bits (# parameters: 1)
+						- Output size: 32 bits (# parameters: 1)
+				- Operation customerDecisionMessageConsumer.receiveCustomerDecision:
+						- Input size: 0 bits (# parameters: 0)
+						- Output size: 64 bits (# parameters: 1)
+				- Operation customerDecisionMessageConsumer.createPolicyForInsuranceQuoteRequest:
+						- Input size: 129 bits (# parameters: 1)
+						- Output size: 1088 bits (# parameters: 1)
+
+				- Operation with highest input size: policyInformationHolder.createPolicyDtos
+						- Size: 2240 bits (# parameters: 3)
+				- Operation with highest output size: insuranceQuoteRequestInformationHolder.getInsuranceQuoteRequest
+						- Size: 1536 bits (# parameters: 2)
+				- Overall interaction size: 26721 bits (# parameters: 78)
+						- Overall input size: 9665 bits (# parameters: 44)
+						- Overall output size: 17056 bits (# parameters: 34)
+				- Average interaction size: 1161.7826086956522 bits (# operations: 23)
+						- Average input size: 420.2173913043478 bits
+						- Average output size: 741.5652173913044 bits
+
+	- Metric M6: (Statically Determinable) Cyclic Dependencies Count
+		- # Cyclic Dependencies: 0
+********************************************************************************
+Haupt et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/policyManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- # Resources for microservice com.lakesidemutual.policymanagement.PolicyManagementBackend: 5
+- Resource Overview:
+	- GET (2):
+		- policyManagement.CustomerInfoEntity
+		- policyManagement.PolicyAggregateRoot
+	- PATCH (3):
+		- policyManagement.InsuranceQuoteEntity
+		- policyManagement.InsuranceQuoteRequestAggregateRoot
+		- policyManagement.InsuranceOptionsEntity
+	- PUT (1):
+		- policyManagement.PolicyAggregateRoot
+	- DELETE (1):
+		- policyManagement.PolicyAggregateRoot
+
+- Resource Characterization:
+	- Root resources (count: 2): policyManagement.InsuranceQuoteRequestAggregateRoot, policyManagement.PolicyAggregateRoot
+	- # Resource links: 4
+	- Longest resource path (depth: 2):
+			policyManagement.InsuranceQuoteRequestAggregateRoot -> policyManagement.CustomerInfoEntity
+********************************************************************************
+Hirzalla et al. Metrics Analysis for Models:
+	- Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi
+********************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overall Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Metric NoS: Number of Services
+	- # Microservices: 1
+
+- Metric SS: Stateless Services
+	- Metric result (fraction of stateless services in stateless and stateful services): 0.0
+	- # Stateless services: 0
+	- # Stateful services: 1
+		- Services for model policyManagementBackend.xmi
+			- Stateless services:
+			- Stateful services:
+				- com.lakesidemutual.policymanagement.PolicyManagementBackend
+
+- Metric SCP: Service Composition Pattern
+	- Metric result: 1.0
+	- SCPs metric result (fraction of structurally composed services): 1.0
+	- SCPwf metric result (fraction of services composed at runtime via parameter initialization): NaN
+	- # Atomic services: 0
+	- # Structurally composed services: 1
+	- # Services composed at runtime via parameter initialization: 0
+		- Services for model policyManagementBackend.xmi
+			- Atomic services:
+			- Structurally composed services:
+				- com.lakesidemutual.policymanagement.PolicyManagementBackend
+			- Services composed at runtime via parameter initialization:
+
+- Metric NOVS: Number of Versions per Service
+	- Metric result (average number of versions per microservice): 1.0
+		- Versions for model policyManagementBackend.xmi
+			- Microservice com.lakesidemutual.policymanagement.PolicyManagementBackend:
+				- No explicit version specified
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Metrics for model "mapping models/policyManagementBackend.xmi"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Microservice: com.lakesidemutual.policymanagement.PolicyManagementBackend
+	- Metric WSIC: Weighted Service Interface and Operation Count
+		- # Exposed interfaces (unweighted WSIC): 6.0
+		- # Exposed operations (unweighted WSIC): 14.0

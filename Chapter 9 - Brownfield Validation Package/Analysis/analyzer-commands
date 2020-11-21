@@ -1,0 +1,159 @@
+Basic Domain Analyis:
+    CustomerCore:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-core/customerCore.data" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore/domain_customerCore.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation
+
+    CustomerManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-management-backend/customerManagementBackend.data" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend/customerManagementBackend_customerManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation
+
+    CustomerSelfServiceBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.data" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend/customerSelfServiceBackend_customerSelfServiceBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation
+
+    PolicyManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/policy-management-backend/policyManagementBackend.data" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend/policyManagementBackend_policyManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation
+
+Basic Service Analyis:
+    CustomerCore:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-core/customerCore.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="basic-service-analysis"
+
+    CustomerManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-management-backend/customerManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="basic-service-analysis"
+
+    CustomerSelfServiceBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="basic-service-analysis"
+
+    PolicyManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/policy-management-backend/policyManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="basic-service-analysis"
+
+Hirzalla Metrics:
+    java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+        -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.services" \
+        -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi" \
+        --invoke_only_specified_phases intermediate_model_validation \
+        --additional_intermediate_model "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi" \
+        --additional_intermediate_model "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi" \
+        --additional_intermediate_model "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi" \
+        --analysis_modules="service-metrics-hirzalla" \
+        --service-metrics-hirzalla-verbose
+
+Athanasopoulos Metrics:
+    CustomerCore:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-core/customerCore.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-athanasopoulos" \
+            --service-metrics-athanasopoulos-verbose
+
+    CustomerManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-management-backend/customerManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-athanasopoulos" \
+            --service-metrics-athanasopoulos-verbose
+
+    CustomerSelfServiceBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-athanasopoulos" \
+            --service-metrics-athanasopoulos-verbose
+
+    PolicyManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/policy-management-backend/policyManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-athanasopoulos" \
+            --service-metrics-athanasopoulos-verbose
+
+Haupt Metrics:
+    CustomerCore:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-core/customerCore.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-haupt"
+
+    CustomerManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-management-backend/customerManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-haupt"
+
+    CustomerSelfServiceBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-haupt"
+
+    PolicyManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/policy-management-backend/policyManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-haupt"
+
+Engel Metrics:
+    CustomerCore:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-core/customerCore.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerCore.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-engel" \
+            --service-metrics-engel-verbose
+
+    CustomerManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-management-backend/customerManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-engel" \
+            --service-metrics-engel-verbose
+
+    CustomerSelfServiceBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/customer-self-service-backend/customerSelfServiceBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/customerSelfServiceBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-engel" \
+            --service-metrics-engel-verbose
+
+    PolicyManagementBackend:
+        java11 -jar de.fhdo.lemma.analyzer-0.7.0-SNAPSHOT-standalone.jar \
+            -s "../Reconstruction LEMMA Models/policy-management-backend/policyManagementBackend.services" \
+            -i "../Reconstruction LEMMA Models/intermediate/mapping models/policyManagementBackend.xmi" \
+            --invoke_only_specified_phases intermediate_model_validation \
+            --analysis_modules="service-metrics-engel" \
+            --service-metrics-engel-verbose

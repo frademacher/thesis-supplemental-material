@@ -46,7 +46,7 @@ To reproduce our evaluation results per evaluation step from the extracted raw L
 When executing the script from the terminal console, it will print the evaluation results for each side microservice and evaluation step. The script also prints the assumed baseline, i.e., the combination of Genlet and code generation pattern, from which the evaluation results were derived for the respective side microservice and evaluation step.
 
 ### 4 Raw Data Contained in the Validation Package
-The validation also comprises raw data for each of the reproduction steps described in Sections 1 to 3. In case one or more reproduction steps could not be executed, the reproduction of our results is still feasible by means of the provided raw data. For the reproduction steps, the raw may be found in the following locations inside the validation package:
+The validation package also comprises raw data for each of the reproduction steps described in Sections 1 to 3. In case one or more reproduction steps could not be executed, the reproduction of our results is still feasible by means of the provided raw data. For the reproduction steps, the raw may be found in the following locations inside the validation package:
 1. Code Generation: The `Generated Code` folder comprises the generated microservice code produced by the Java Base Generator for each possible codebase based on Genlets and code generation pattern combinations.
 2. LOC Counting: The `Generated Code` folder comprises the LOC CSV files for each generated codebase as produced by the `loc.sh` script.
 3. Analysis: The `Analysis/Raw Results.txt` file comprises the output of the `analyze.py` Python script as it was executed on the computer of the author.

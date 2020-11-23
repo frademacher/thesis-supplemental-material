@@ -65,7 +65,7 @@ public functional microservice de.puls.ChargingStationManagementQuerySide {
 
         @Kafka::_aspects.AvroParticipant(
             topic="parkingAreaCreatedEvents",
-            consumerGroup="parkingAreaEvents"
+            consumerGroup="parkingAreaCreatedEvents"
         )
         receiveParkingAreaCreatedEvent(
             async event : Domain::ChargingStationManagement.ParkingAreaCreatedEvent
@@ -73,7 +73,7 @@ public functional microservice de.puls.ChargingStationManagementQuerySide {
 
         @Kafka::_aspects.AvroParticipant(
             topic="parkingAreaUpdatedEvents",
-            consumerGroup="parkingAreaEvents"
+            consumerGroup="parkingAreaUpdatedEvents"
         )
         receiveParkingAreaUpdatedEvent(
             async event : Domain::ChargingStationManagement.ParkingAreaUpdatedEvent
@@ -81,7 +81,7 @@ public functional microservice de.puls.ChargingStationManagementQuerySide {
 
         @Kafka::_aspects.AvroParticipant(
             topic="parkingAreaDeletedEvents",
-            consumerGroup="parkingAreaEvents"
+            consumerGroup="parkingAreaDeletedEvents"
         )
         receiveParkingAreaDeletedEvent(
             async event : Domain::ChargingStationManagement.ParkingAreaDeletedEvent

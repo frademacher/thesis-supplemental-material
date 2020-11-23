@@ -16,7 +16,7 @@ public abstract class ListenersGenImpl implements ListenersGen {
         this.querySideService = querySideService;
     }
 
-    @KafkaListener(topics = "${kafka.topic.parkingAreaCreatedEvents}", groupId = "${kafka.group.parkingAreaEvents}", containerFactory = "avroParkingAreaCreatedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaCreatedEventErrorHandler")
+    @KafkaListener(topics = "${kafka.topic.parkingAreaCreatedEvents}", groupId = "${kafka.group.parkingAreaCreatedEvents}", containerFactory = "avroParkingAreaCreatedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaCreatedEventErrorHandler")
     @Override
     public void avroReceiveParkingAreaCreatedEventListener(Object object) {
         querySideService.avroReceiveParkingAreaCreatedEvent(object);
@@ -28,7 +28,7 @@ public abstract class ListenersGenImpl implements ListenersGen {
         return (message, exception, consumer) -> querySideService.receiveParkingAreaCreatedEventErrorHandler(message, exception, consumer);
     }
 
-    @KafkaListener(topics = "${kafka.topic.parkingAreaUpdatedEvents}", groupId = "${kafka.group.parkingAreaEvents}", containerFactory = "avroParkingAreaUpdatedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaUpdatedEventErrorHandler")
+    @KafkaListener(topics = "${kafka.topic.parkingAreaUpdatedEvents}", groupId = "${kafka.group.parkingAreaUpdatedEvents}", containerFactory = "avroParkingAreaUpdatedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaUpdatedEventErrorHandler")
     @Override
     public void avroReceiveParkingAreaUpdatedEventListener(Object object) {
         querySideService.avroReceiveParkingAreaUpdatedEvent(object);
@@ -40,7 +40,7 @@ public abstract class ListenersGenImpl implements ListenersGen {
         return (message, exception, consumer) -> querySideService.receiveParkingAreaUpdatedEventErrorHandler(message, exception, consumer);
     }
 
-    @KafkaListener(topics = "${kafka.topic.parkingAreaDeletedEvents}", groupId = "${kafka.group.parkingAreaEvents}", containerFactory = "avroParkingAreaDeletedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaDeletedEventErrorHandler")
+    @KafkaListener(topics = "${kafka.topic.parkingAreaDeletedEvents}", groupId = "${kafka.group.parkingAreaDeletedEvents}", containerFactory = "avroParkingAreaDeletedEventsKafkaListenerContainerFactory", errorHandler = "receiveParkingAreaDeletedEventErrorHandler")
     @Override
     public void avroReceiveParkingAreaDeletedEventListener(Object object) {
         querySideService.avroReceiveParkingAreaDeletedEvent(object);

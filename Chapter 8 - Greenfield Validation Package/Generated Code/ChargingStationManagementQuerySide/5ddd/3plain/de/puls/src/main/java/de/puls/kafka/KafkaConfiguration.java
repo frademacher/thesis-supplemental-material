@@ -32,14 +32,14 @@ public class KafkaConfiguration {
     @Value(value = "${kafka.avro.schemaRegistryAddress}")
     private String avroSchemaRegistryAddress;
 
-    @Value(value = "${kafka.group.parkingAreaEvents}")
-    private String avroParkingAreaEventsConsumerGroupId;
+    @Value(value = "${kafka.group.parkingAreaCreatedEvents}")
+    private String avroParkingAreaCreatedEventsConsumerGroupId;
 
     public ConsumerFactory<String, Object> avroParkingAreaCreatedEventsConsumerFactory() {
         KafkaAvroDeserializer deserializer = new KafkaAvroDeserializer();
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
-        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaEventsConsumerGroupId);
+        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaCreatedEventsConsumerGroupId);
         configProps.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class);
         configProps.put(KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG, avroSchemaRegistryAddress);
@@ -55,11 +55,14 @@ public class KafkaConfiguration {
         return factory;
     }
 
+    @Value(value = "${kafka.group.parkingAreaUpdatedEvents}")
+    private String avroParkingAreaUpdatedEventsConsumerGroupId;
+
     public ConsumerFactory<String, Object> avroParkingAreaUpdatedEventsConsumerFactory() {
         KafkaAvroDeserializer deserializer = new KafkaAvroDeserializer();
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
-        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaEventsConsumerGroupId);
+        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaUpdatedEventsConsumerGroupId);
         configProps.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class);
         configProps.put(KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG, avroSchemaRegistryAddress);
@@ -75,11 +78,14 @@ public class KafkaConfiguration {
         return factory;
     }
 
+    @Value(value = "${kafka.group.parkingAreaDeletedEvents}")
+    private String avroParkingAreaDeletedEventsConsumerGroupId;
+
     public ConsumerFactory<String, Object> avroParkingAreaDeletedEventsConsumerFactory() {
         KafkaAvroDeserializer deserializer = new KafkaAvroDeserializer();
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
-        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaEventsConsumerGroupId);
+        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, avroParkingAreaDeletedEventsConsumerGroupId);
         configProps.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class);
         configProps.put(KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG, avroSchemaRegistryAddress);

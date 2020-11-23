@@ -114,7 +114,7 @@
           </properties>
           <properties name="consumerGroup" type="string"/>
           <propertyValues value="parkingAreaCreatedEvents" property="//@microservices.0/@interfaces.0/@operations.2/@aspects.0/@properties.0"/>
-          <propertyValues value="parkingAreaEvents" property="//@microservices.0/@interfaces.0/@operations.2/@aspects.0/@properties.1"/>
+          <propertyValues value="parkingAreaCreatedEvents" property="//@microservices.0/@interfaces.0/@operations.2/@aspects.0/@properties.1"/>
         </aspects>
         <parameters name="event" qualifiedName="de.puls.ChargingStationManagementQuerySide.QuerySide.receiveParkingAreaCreatedEvent.event" exchangePattern="IN" communicationType="ASYNCHRONOUS">
           <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaCreatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaCreatedEvent" import="//@imports.0"/>
@@ -130,7 +130,7 @@
           </properties>
           <properties name="consumerGroup" type="string"/>
           <propertyValues value="parkingAreaUpdatedEvents" property="//@microservices.0/@interfaces.0/@operations.3/@aspects.0/@properties.0"/>
-          <propertyValues value="parkingAreaEvents" property="//@microservices.0/@interfaces.0/@operations.3/@aspects.0/@properties.1"/>
+          <propertyValues value="parkingAreaUpdatedEvents" property="//@microservices.0/@interfaces.0/@operations.3/@aspects.0/@properties.1"/>
         </aspects>
         <parameters name="event" qualifiedName="de.puls.ChargingStationManagementQuerySide.QuerySide.receiveParkingAreaUpdatedEvent.event" exchangePattern="IN" communicationType="ASYNCHRONOUS">
           <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaUpdatedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaUpdatedEvent" import="//@imports.0"/>
@@ -146,7 +146,7 @@
           </properties>
           <properties name="consumerGroup" type="string"/>
           <propertyValues value="parkingAreaDeletedEvents" property="//@microservices.0/@interfaces.0/@operations.4/@aspects.0/@properties.0"/>
-          <propertyValues value="parkingAreaEvents" property="//@microservices.0/@interfaces.0/@operations.4/@aspects.0/@properties.1"/>
+          <propertyValues value="parkingAreaDeletedEvents" property="//@microservices.0/@interfaces.0/@operations.4/@aspects.0/@properties.1"/>
         </aspects>
         <parameters name="event" qualifiedName="de.puls.ChargingStationManagementQuerySide.QuerySide.receiveParkingAreaDeletedEvent.event" exchangePattern="IN" communicationType="ASYNCHRONOUS">
           <type xsi:type="intermediate_1:IntermediateImportedComplexType" name="ParkingAreaDeletedEvent" origin="DATA_MODEL" kind="STRUCTURE" qualifiedName="ChargingStationManagement.ParkingAreaDeletedEvent" import="//@imports.0"/>

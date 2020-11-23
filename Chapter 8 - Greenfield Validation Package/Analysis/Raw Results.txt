@@ -50,13 +50,13 @@ Pattern comparison for microservice ChargingStationManagementQuerySide (base Gen
 Java
 	plain
 		nFiles: 22
-		LOC: 680
+		LOC: 684
 	extended generation gap
 		nFiles: 43
-		LOC: 951
+		LOC: 955
 	generation gap
 		nFiles: 64
-		LOC: 1138
+		LOC: 1142
 Maven
 	plain
 		nFiles: 1
@@ -70,13 +70,13 @@ Maven
 Properties
 	plain
 		nFiles: 1
-		LOC: 8
+		LOC: 10
 	extended generation gap
 		nFiles: 1
-		LOC: 8
+		LOC: 10
 	generation gap
 		nFiles: 1
-		LOC: 8
+		LOC: 10
 Avro
 	plain
 		nFiles: 3
@@ -96,16 +96,6 @@ Avro
 ----------------------------------------------------------------------------------------------------
 Comparison of domain- and service-related code for microservice ChargingStationManagementCommandSide (base Genlet: 5ddd, base pattern: 3plain)
 ----------------------------------------------------------------------------------------------------
-Properties
-	Complete
-		nFiles: 1
-		LOC: 6
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 6
 Java
 	Complete
 		nFiles: 19
@@ -116,6 +106,16 @@ Java
 	Service
 		nFiles: 4
 		LOC: 135
+Properties
+	Complete
+		nFiles: 1
+		LOC: 6
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 6
 Maven
 	Complete
 		nFiles: 1
@@ -150,26 +150,26 @@ Over all languages
 ----------------------------------------------------------------------------------------------------
 Comparison of domain- and service-related code for microservice ChargingStationManagementQuerySide (base Genlet: 5ddd, base pattern: 3plain)
 ----------------------------------------------------------------------------------------------------
-Properties
-	Complete
-		nFiles: 1
-		LOC: 8
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 8
 Java
 	Complete
 		nFiles: 22
-		LOC: 680
+		LOC: 684
 	Domain
 		nFiles: 16
 		LOC: 465
 	Service
 		nFiles: 6
-		LOC: 215
+		LOC: 219
+Properties
+	Complete
+		nFiles: 1
+		LOC: 10
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 10
 Maven
 	Complete
 		nFiles: 1
@@ -193,13 +193,13 @@ Avro
 Over all languages
 	Complete
 		nFiles: 27
-		LOC: 1091
+		LOC: 1097
 	Domain
 		nFiles: 19
 		LOC: 789
 	Service
 		nFiles: 8
-		LOC: 302
+		LOC: 308
 
 
                                                                                                                                                                                                         
@@ -300,10 +300,10 @@ Java
 		LOC: 534
 	springcloud kafka
 		nFiles: 22
-		LOC: 660
+		LOC: 664
 	ddd
 		nFiles: 22
-		LOC: 680
+		LOC: 684
 
 
 
@@ -337,10 +337,10 @@ Properties
 		LOC: 2
 	springcloud kafka
 		nFiles: 1
-		LOC: 8
+		LOC: 10
 	ddd
 		nFiles: 1
-		LOC: 8
+		LOC: 10
 
 
 
@@ -429,19 +429,19 @@ Complete
 	Generated
 		Java
 			nFiles: 22
-			LOC: 680
+			LOC: 684
 		Maven
 			nFiles: 1
 			LOC: 79
 		Properties
 			nFiles: 1
-			LOC: 8
+			LOC: 10
 		Avro
 			nFiles: 3
 			LOC: 324
 		SUMS
 			nFiles: 27
-			nLOC: 1091
+			nLOC: 1097
 Domain
 	Manual
 		LEMMA_domain

@@ -23,3 +23,17 @@ type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaDeletedEv
         Kafka::_aspects.AvroSchema(file="ParkingAreaDeletedEvent.avsc");
     }
 }
+
+@technology(Java)
+type CommandSideServices::Domain::ChargingStationManagement.ParkingArea {
+    aspects {
+        Java::_aspects.Table("ParkingArea");
+    }
+}
+
+@technology(Spring)
+type CommandSideServices::Domain::ChargingStationManagement.ParkingAreaRepository {
+    aspects {
+        Spring::_aspects.CrudRepository;
+    }
+}

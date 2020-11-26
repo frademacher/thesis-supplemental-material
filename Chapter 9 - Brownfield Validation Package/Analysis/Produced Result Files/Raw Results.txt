@@ -5,7 +5,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual complete)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     589 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.36 s (727.0 files/s, 46870.8 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.50 s (520.3 files/s, 33546.9 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual top-level elements)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     844 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.09 s (63.9 files/s, 5193.6 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.11 s (52.7 files/s, 4288.8 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ SAR Activity 1: Line Counts (LEMMA complete)
 classified 59 files      55 unique files.                              
       35 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.01 s (1673.0 files/s, 289698.5 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.02 s (1617.3 files/s, 280047.2 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ SAR Activity 1: Line Counts (LEMMA technology)
 classified 59 files      55 unique files.                              
       53 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.01 s (632.6 files/s, 29281.5 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.01 s (655.7 files/s, 30348.7 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -321,8 +321,8 @@ Protocol Overview (Model Count: 1)
 	- Asynchronous
 		- # Asynchronous Protocols: 0
 	- Synchronous
-		- rest/application/json
-		- soap/application/xml
+		- rest (application/json)
+		- soap (application/xml)
 		- # Synchronous Protocols: 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 REST Overview (Model Count: 1)
@@ -814,7 +814,7 @@ Protocol Overview (Model Count: 1)
 	- Asynchronous
 		- # Asynchronous Protocols: 0
 	- Synchronous
-		- rest/application/json
+		- rest (application/json)
 		- # Synchronous Protocols: 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 REST Overview (Model Count: 1)
@@ -1120,10 +1120,10 @@ Protocol Overview (Model Count: 1)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Effective Protocols
 	- Asynchronous
-		- amqp/application/json
+		- amqp (application/json)
 		- # Asynchronous Protocols: 1
 	- Synchronous
-		- rest/application/json
+		- rest (application/json)
 		- # Synchronous Protocols: 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 REST Overview (Model Count: 1)
@@ -1493,10 +1493,10 @@ Protocol Overview (Model Count: 1)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Effective Protocols
 	- Asynchronous
-		- amqp/application/json
+		- amqp (application/json)
 		- # Asynchronous Protocols: 1
 	- Synchronous
-		- rest/application/json
+		- rest (application/json)
 		- # Synchronous Protocols: 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 REST Overview (Model Count: 1)

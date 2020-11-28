@@ -5,7 +5,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual complete)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     589 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.50 s (520.3 files/s, 33546.9 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.46 s (562.1 files/s, 36237.2 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual top-level elements)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     844 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.11 s (52.7 files/s, 4288.8 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.18 s (32.4 files/s, 2637.9 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ SAR Activity 1: Line Counts (LEMMA complete)
 classified 59 files      55 unique files.                              
       35 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.02 s (1617.3 files/s, 280047.2 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.02 s (1067.9 files/s, 184912.8 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ SAR Activity 1: Line Counts (LEMMA technology)
 classified 59 files      55 unique files.                              
       53 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.01 s (655.7 files/s, 30348.7 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.01 s (520.9 files/s, 24109.0 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------

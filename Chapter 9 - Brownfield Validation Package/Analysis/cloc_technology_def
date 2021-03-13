@@ -1,5 +1,4 @@
 LemmaTechnology
-    filter rm_comments_in_strings " /* */
-    filter rm_comments_in_strings " //
+    filter call_regexp_common C++
     extension technology
     3rd_gen_scale 5.00

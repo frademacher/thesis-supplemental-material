@@ -96,36 +96,6 @@ Avro
 ----------------------------------------------------------------------------------------------------
 Comparison of domain- and service-related code for microservice ChargingStationManagementCommandSide (base Genlet: 5ddd, base pattern: 3plain)
 ----------------------------------------------------------------------------------------------------
-Avro
-	Complete
-		nFiles: 3
-		LOC: 324
-	Domain
-		nFiles: 3
-		LOC: 324
-	Service
-		nFiles: 0
-		LOC: 0
-Maven
-	Complete
-		nFiles: 1
-		LOC: 79
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 79
-Properties
-	Complete
-		nFiles: 1
-		LOC: 6
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 6
 Java
 	Complete
 		nFiles: 19
@@ -136,6 +106,36 @@ Java
 	Service
 		nFiles: 4
 		LOC: 135
+Maven
+	Complete
+		nFiles: 1
+		LOC: 79
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 79
+Avro
+	Complete
+		nFiles: 3
+		LOC: 324
+	Domain
+		nFiles: 3
+		LOC: 324
+	Service
+		nFiles: 0
+		LOC: 0
+Properties
+	Complete
+		nFiles: 1
+		LOC: 6
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 6
 Over all languages
 	Complete
 		nFiles: 24
@@ -150,36 +150,6 @@ Over all languages
 ----------------------------------------------------------------------------------------------------
 Comparison of domain- and service-related code for microservice ChargingStationManagementQuerySide (base Genlet: 5ddd, base pattern: 3plain)
 ----------------------------------------------------------------------------------------------------
-Avro
-	Complete
-		nFiles: 3
-		LOC: 324
-	Domain
-		nFiles: 3
-		LOC: 324
-	Service
-		nFiles: 0
-		LOC: 0
-Maven
-	Complete
-		nFiles: 1
-		LOC: 79
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 79
-Properties
-	Complete
-		nFiles: 1
-		LOC: 10
-	Domain
-		nFiles: 0
-		LOC: 0
-	Service
-		nFiles: 1
-		LOC: 10
 Java
 	Complete
 		nFiles: 22
@@ -190,6 +160,36 @@ Java
 	Service
 		nFiles: 6
 		LOC: 219
+Maven
+	Complete
+		nFiles: 1
+		LOC: 79
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 79
+Avro
+	Complete
+		nFiles: 3
+		LOC: 324
+	Domain
+		nFiles: 3
+		LOC: 324
+	Service
+		nFiles: 0
+		LOC: 0
+Properties
+	Complete
+		nFiles: 1
+		LOC: 10
+	Domain
+		nFiles: 0
+		LOC: 0
+	Service
+		nFiles: 1
+		LOC: 10
 Over all languages
 	Complete
 		nFiles: 27
@@ -376,10 +376,10 @@ Complete
 	Manual
 		LEMMA
 			nFiles: 3
-			LOC: 180
+			LOC: 179
 		SUMS
 			nFiles: 3
-			nLOC: 180
+			nLOC: 179
 	Generated
 		Java
 			nFiles: 19
@@ -400,10 +400,10 @@ Domain
 	Manual
 		LEMMA_domain
 			nFiles: 2
-			LOC: 109
+			LOC: 108
 		SUMS
 			nFiles: 2
-			nLOC: 109
+			nLOC: 108
 	Generated
 		Java
 			nFiles: 15
@@ -422,10 +422,10 @@ Complete
 	Manual
 		LEMMA
 			nFiles: 3
-			LOC: 188
+			LOC: 187
 		SUMS
 			nFiles: 3
-			nLOC: 188
+			nLOC: 187
 	Generated
 		Java
 			nFiles: 22
@@ -446,10 +446,10 @@ Domain
 	Manual
 		LEMMA_domain
 			nFiles: 2
-			LOC: 109
+			LOC: 108
 		SUMS
 			nFiles: 2
-			nLOC: 109
+			nLOC: 108
 	Generated
 		Java
 			nFiles: 16

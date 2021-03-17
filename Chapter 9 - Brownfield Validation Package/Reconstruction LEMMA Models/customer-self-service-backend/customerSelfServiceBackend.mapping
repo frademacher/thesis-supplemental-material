@@ -579,7 +579,7 @@ selfServiceBackendServices::com.lakesidemutual.customerselfservice.CustomerSelfS
 					spring::_aspects.Valid;
 				}
 			}
-			complex quoteRequestDto : spring::_types.ResponseEntity;
+			complex responseDto : spring::_types.ResponseEntity;
 			primitive unauthorized : spring::_types.ResponseEntityErrorCode {
 				aspects {
 					spring::_aspects.ResponseStatus("UNAUTHORIZED");

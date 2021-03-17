@@ -152,7 +152,7 @@ functional microservice com.lakesidemutual.customerselfservice.CustomerSelfServi
 			sync authentication : string,
 			sync requestDto
 				: customerSelfServiceBackend::customerSelfService.InsuranceQuoteRequestDto,
-			sync out quoteRequestDto
+			sync out responseDto
 				: customerSelfServiceBackend::customerSelfService.InsuranceQuoteRequestDto,
 			async out insuranceQuoteRequestEvent
 				: customerSelfServiceBackend::customerSelfService.InsuranceQuoteRequestEvent,

@@ -22,11 +22,11 @@ static_analysis() {
         --invoke_only_specified_phases intermediate_model_validation \
         --csv_file="$csvFile" \
         --csv_column_prefix="$serviceName" \
-        --analysis_modules="basic-service-analysis" \
-        --analysis_modules="service-metrics-athanasopoulos" \
-        --analysis_modules="service-metrics-engel" \
-        --analysis_modules="service-metrics-haupt" \
-        --analysis_modules="service-metrics-hirzalla" \
+        --analysis_module="basic-service-analysis" \
+        --analysis_module="service-metrics-athanasopoulos" \
+        --analysis_module="service-metrics-engel" \
+        --analysis_module="service-metrics-haupt" \
+        --analysis_module="service-metrics-hirzalla" \
         --service-metrics-athanasopoulos-verbose \
         --service-metrics-engel-verbose \
         --service-metrics-hirzalla-verbose | tee -a "$RAW_RESULT_FILE"

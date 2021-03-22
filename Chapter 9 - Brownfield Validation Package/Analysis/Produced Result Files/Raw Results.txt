@@ -5,7 +5,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual complete)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     589 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.48 s (542.1 files/s, 34950.0 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.35 s (752.9 files/s, 48539.8 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ SAR Activity 1: Line Counts (Lakeside Mutual top-level elements)
 classified 850 filesDuplicate file check 850 files (598 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                          Unique:      400 files                                          Unique:      500 files                                               824 unique files.                              
 Counting:  100Counting:  200Counting:  300Counting:  400Counting:  500Counting:  600Counting:  700Counting:  800     844 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.12 s (52.0 files/s, 4229.7 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.09 s (64.4 files/s, 5240.3 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ SAR Activity 1: Line Counts (LEMMA complete)
 classified 59 files      55 unique files.                              
       35 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.13 s (197.2 files/s, 34151.7 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.10 s (250.5 files/s, 43384.6 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ SAR Activity 1: Line Counts (LEMMA technology)
 classified 59 files      55 unique files.                              
       53 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.01 s (631.1 files/s, 29210.4 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.01 s (536.4 files/s, 24829.7 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -740,7 +740,7 @@ Metrics for model "mapping models/customerCore.xmi"
 - Resource Characterization:
 	- Root resources (count: 1): customerCore.CustomerAggregateRoot
 	- # Resource links: 1
-	- Longest resource path (depth: 2):
+	- Longest resource path (depth: 1):
 			customerCore.CustomerAggregateRoot -> customerCore.CustomerProfileEntity
 ********************************************************************************
 Hirzalla et al. Metrics Analysis for Models:
@@ -1048,7 +1048,7 @@ Metrics for model "mapping models/customerManagementBackend.xmi"
 - Resource Characterization:
 	- Root resources (count: 2): customerManagementBackend.InteractionEntity, customerManagementBackend.InteractionLogAggregateRoot
 	- # Resource links: 0
-	- Longest resource path (depth: 1):
+	- Longest resource path (depth: 0):
 			customerManagementBackend.InteractionEntity
 ********************************************************************************
 Hirzalla et al. Metrics Analysis for Models:
@@ -1421,7 +1421,7 @@ Metrics for model "mapping models/customerSelfServiceBackend.xmi"
 - Resource Characterization:
 	- Root resources (count: 1): customerSelfService.InsuranceQuoteRequestAggregateRoot
 	- # Resource links: 3
-	- Longest resource path (depth: 2):
+	- Longest resource path (depth: 1):
 			customerSelfService.InsuranceQuoteRequestAggregateRoot -> customerSelfService.CustomerInfoEntity
 ********************************************************************************
 Hirzalla et al. Metrics Analysis for Models:
@@ -1918,7 +1918,7 @@ Metrics for model "mapping models/policyManagementBackend.xmi"
 - Resource Characterization:
 	- Root resources (count: 2): policyManagement.InsuranceQuoteRequestAggregateRoot, policyManagement.PolicyAggregateRoot
 	- # Resource links: 4
-	- Longest resource path (depth: 2):
+	- Longest resource path (depth: 1):
 			policyManagement.InsuranceQuoteRequestAggregateRoot -> policyManagement.CustomerInfoEntity
 ********************************************************************************
 Hirzalla et al. Metrics Analysis for Models:
